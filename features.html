@@ -66,26 +66,15 @@
   <body>
     <header role="banner">
       <nav role="navigation">
-        <p class="logo"><a href="index.html" onclick="if (window.frameElement) { parent.toggleFeatures(); return false }" title="WebSlides">WebSlides</a></p>
-        <ul>
-          <li class="github">
-            <a rel="external" href="https://github.com/webslides/webslides" title="Github">
-              <svg class="fa-github">
-                <use xlink:href="#fa-github"></use>
-              </svg>
-              <em>WebSlides</em>
-            </a>
-          </li>
-          <li class="twitter">
-            <a rel="external" href="https://twitter.com/webslides" title="Twitter">
-              <svg class="fa-twitter">
-                <use xlink:href="#fa-twitter"></use>
-              </svg>
-              <em>@WebSlides</em>
-            </a>
-          </li>
-          <!--  <li class="dribbble"><a rel="external" href="http://dribbble.com/webslides" title="Dribbble"><svg class="fa-dribbble"><use xlink:href="#fa-dribbble"></use></svg> <em>webslides</em></a></li> -->
-        </ul>
+        <a href="index.html" onclick="if (window.frameElement) { parent.closeFeatures(); return false}" title="theCucumber.app"><img height="44px" width="44px" class="fab mr-1" src="assets/img/logo_64_64.png"></img></a>
+        <span style="float: right;">
+          <a class="nav-link" href="javascript:void(0)">
+              <i class="fa fa-sign-in-alt mr-1"></i> Login
+          </a>
+          <a class="nav-link" href="javascript:void(0)">
+              <i class="fa fa-plus-square mr-1"></i> Register
+          </a>
+        </span>
       </nav>
     </header>
 
@@ -382,6 +371,30 @@
     <script src="static/js/webslides.js"></script>
     <script>
       window.ws = new WebSlides();
+    </script>
+
+    <script>
+      window.onload = function() { 
+        // flash the navigation menu
+        let header = document.querySelector("header[role='banner']");
+        header.style.opacity = 1;
+        setTimeout(function() { 
+          header.style.opacity = 0;
+          header.onmouseover = function() {
+            header.style.opacity = 1;
+          }
+          header.onmouseleave = function() {
+            header.style.opacity = 0;
+          }
+          header.ontouchenter = function() {
+            header.style.opacity = 1;
+          }
+          header.ontouchleave = function() {
+            header.style.opacity = 0;
+          }
+        }, 2500);
+      }
+
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
