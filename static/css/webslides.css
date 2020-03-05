@@ -1311,7 +1311,7 @@ header,
   top: auto; }
 
 header[role='banner'] {
-  position: relative; }
+  opacity: 0; }
   header[role='banner']:hover {
     opacity: 1; }
 
