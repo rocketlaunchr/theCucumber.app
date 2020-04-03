@@ -373,13 +373,35 @@
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
     <script>
-      window.ws = new WebSlides();
+      window.ws = new WebSlides({
+        changeOnClick: true,
+        loop: false,
+      });
+
+      var slidesShown = {}
+
+      window.ws.el.addEventListener('ws:slide-change', function (e) {
+        var noOfSlides = event.detail.slides;
+        var currentSlide = event.detail.currentSlide;
+        
+        slidesShown[currentSlide] = true;
+
+        if (Object.keys(slidesShown).length >= noOfSlides - 1) {
+          if (window.frameElement) {
+            // We are inside an iframe
+            var to = setTimeout(function(){
+              parent.closeFeatures();
+              clearTimeout(to)
+            }, 2500);
+          }
+        }
+      });
     </script>
 
     <script>
       window.onload = function() { 
         // flash the navigation menu
-        let header = document.querySelector("header[role='banner']");
+        var header = document.querySelector("header[role='banner']");
         header.style.opacity = 1;
         setTimeout(function() { 
           header.style.opacity = 0;
