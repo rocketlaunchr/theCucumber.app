@@ -16,7 +16,7 @@
     -->
 
     <!-- SEO -->
-    <title>theCucumber.app</title>
+    <title>WebSlides: Making HTML presentations easy</title>
     <meta name="description" content="WebSlides is the easiest way to make HTML presentations, portfolios, and landings. Just essential features.">
 
     <!-- URL CANONICAL -->
@@ -58,109 +58,87 @@
     <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
     <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" crossorigin="anonymous">
-
-
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
-  </head>
 
+  </head>
   <body>
-    <header role="banner">
+    <header class="features" role="banner">
       <nav role="navigation">
-        <a href="index.html" onclick="if (window.frameElement) { parent.closeFeatures(); return false}" title="theCucumber.app"><img height="44px" width="44px" class="fab mr-1" src="assets/img/logo_64_64.png"></img></a>
-        <span style="float: right;">
-          <a class="nav-link" href="javascript:void(0)">
-              <i class="fa fa-sign-in-alt mr-1"></i> Login
-          </a>
-          <a class="nav-link" href="javascript:void(0)">
-              <i class="fa fa-plus-square mr-1"></i> Register
-          </a>
-        </span>
+        <p class="logo"><a href="../index.html" title="The cucumber app">The cucumber app</a></p>
+        <ul class="text-apple">
+          <li>
+            <a class="btn-login" href="https://thecucumber.app/login" title="Login">
+              <strong> Login</strong>
+            </a>
+          </li>
+          <li>
+            <a class="btn-register" href="https://thecucumber.app/register" title="Register">
+              <strong>Register</strong>
+            </a>
+          </li>
+          <li>
+            <ul class="dropdown">
+              <li>
+                <span class="hamburger" onclick="menuToggle()" title="Menu"></span>
+              </li>
+              <li id="myDropdown" class="dropdown-content">
+                <ul>
+                  <li>
+                    <a href="./index.html#slide=1">Home</a>
+                  </li>
+                  <li>
+                    <a href="#slide=1">Features</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#slide=3">Research</a>
+                  </li>
+                  <li>
+                    <a href="./index.html#slide=4">Plans</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main role="main">
       <article id="webslides" class="vertical">
-        <!-- Quick Guide
-          - Each parent <section> in the <article id="webslides"> element is an individual slide.
-          - Vertical sliding = <article id="webslides" class="vertical">
-          - <div class="wrap"> = container 90% / <div class="wrap size-50"> = 45%;
-        -->
+        <!-- slides=01 -->
+        <section class="fullscreen bg-white">
+          <div class="card-50">
+            <figure>
+              <img src="./static/images/the-cucumber-app.png" alt="The cucumber app">
+            </figure>
+            <div class="flex-content">
+              <div class="wrap aligncenter">
+                <img src="./static/images/logos/logo.png"/>
+                <h1 class="text-apple">The <strong>cucumber</strong> app</h1>
+                <p class="text-intro">We provide a sophisticated analytics platform to help you improve your conversions and rocket grow your business.
+                </p>
+                <p>
+                  <a class="button zoomIn radius text-apple"
+                      href="https://thecucumber.app/cucumber-app-latest.zip"
+                      title="Download The cucumber app for free">
+                    Download now
+                  </a>
+                </p>
 
-        <section>
-         <span class="background" style="background-image:url('https://webslides.tv/static/images/nature.jpg')"></span>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap aligncenter">
-            <h1><strong>Create beautiful stories</strong></h1>
-            <p class="text-intro">WebSlides makes HTML presentations easy.<br>
-              Just the essentials and using lovely CSS.
-            </p>
-            <p>
-              <a href="https://webslides.tv/webslides-latest.zip" class="button zoomIn" title="Download WebSlides for free">
-                <svg class="fa-cloud-download">
-                  <use xlink:href="#fa-cloud-download"></use>
-                </svg>
-                WebSlides
-              </a>
-            </p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap size-50 aligncenter">
-            <h2><strong>Why WebSlides?</strong></h2>
-            <p class="text-intro"><a href="demos/why-webslides.html" title="Why WebSlides?">Presentations</a>, <a href="demos/landings.html" title="Landings">landings</a>, <a href="demos/portfolios.html" title="Portfolios">portfolios</a>, and <a href="demos/longforms.html" title="Longforms">longforms</a>.</p>
-            <div class="bg-white shadow">
-              <ul class="flexblock reasons">
-                <li>
-                  <h2>An opportunity to engage.</h2>
-                  <p>WebSlides is about good karma. This is about telling the story, and sharing it in a beautiful way. HTML and CSS as narrative elements.</p>
-                </li>
-                <li>
-                  <h2>Work better, faster.</h2>
-                  <p>Designers, marketers, and journalists can now focus on the content. Simply <a href="demos/index.html" title="WebSlides Demos">choose a demo</a> and customize it in minutes.</p>
-                </li>
-              </ul>
-            </div>
-            <!-- .end .bg-white shadow -->
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section>
-          <!--.wrap = container (width: 90%) -->
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <h3><strong>WebSlides is really easy</strong></h3>
-                <p class="text-intro">Each parent <code>&lt;section&gt;</code> in the #webslides element is an individual slide. </p>
-                <p>Code is clean and scalable. It uses <strong>intuitive markup</strong> with popular naming conventions. There's no need to overuse classes or nesting. <strong>Making an HTML presentation has never been so fast</strong>.</p>
               </div>
-              <!-- .end .column -->
-              <div class="column">
-                <pre>&lt;article id="webslides"&gt;
-  <span class="code-comment">&lt;!-- Slide 1 --&gt;</span>
-  &lt;section&gt;
-    &lt;h1&gt;Design for trust&lt;/h1&gt;
-  &lt;/section&gt;
-  <span class="code-comment">&lt;!-- Slide 2 --&gt;</span>
-  &lt;section class="bg-primary"&gt;
-    &lt;div class="wrap"&gt;
-      &lt;h2&gt;.wrap = container (width: 90%)&lt;/h2&gt;
-    &lt;/div&gt;
-  &lt;/section&gt;
-&lt;/article&gt;
-</pre>
-              </div>
-              <!-- .end .column -->
             </div>
-            <!-- .end .grid -->
           </div>
-          <!-- .end .wrap -->
-        </section>
+         </section>
+        <!-- slides=02 -->
         <section>
+          <div class="wrap aligncenter zoomIn">
+            <h2>The little things mean the most</h2>
+          </div>
+        </section>
+        <!-- slides=03 -->
+        <section class="bg-primary">
           <div class="wrap">
             <h2>Features</h2>
             <ul class="flexblock features">
@@ -227,7 +205,47 @@
             </ul>
           </div>
         </section>
+        <!-- slides=04 -->
         <section>
+          <div class="wrap">
+            <h2 class="aligncenter text-apple">Choose one plan</h2>
+            <ul class="flexblock plans blink">
+              <li>
+                <a href="#" title="Register">
+                  <h2>Basic</h2>
+                  <div>
+                    <span class="price">Free</span>
+                    <p>Good karma. Just the right features. 100% customizable. Make it yours.</p>
+                    <span class="button ghost radius">Select</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Purchase">
+                  <h2>Medium</h2>
+                  <div>
+                    <span class="price"><sup>$</sup>4,99 <sup>/month</sup></span>
+                    <p>Content is for demo purposes only. Minimum effort, amazing results.</p>
+                    <span class="button radius">Buy Now</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Purchase">
+                  <h2>Premium <sup>(save 20%)</sup></h2>
+                  <div>
+                    <span class="price"><sup>$</sup>40 <sup>/year</sup></span>
+                    <p>Prototype faster. Create landings and portfolios. Unlimited projects.</p>
+                    <span class="button ghost radius">Select</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- .end .wrap -->
+        </section>
+        <!-- slides=05 -->
+        <section class="bg-primary">
           <div class="wrap">
             <h2><strong>WebSlides Demos</strong></h2>
             <p>Contribute on <a href="https://github.com/webslides/webslides" title="Contribute on Github">Github</a>. <span class="alignright"><a href="demos/index.html" title="WebSlides Demos">View all &rsaquo;</a></span></p>
@@ -276,85 +294,26 @@
           </div>
           <!-- .end .wrap -->
         </section>
-        <section>
-          <div class="wrap">
-            <div class="grid vertical-align">
-              <div class="column">
-                <h4>
-                  <svg class="fa-life-ring">
-                    <use xlink:href="#fa-life-ring"></use>
-                  </svg>
-                  <strong>Guides</strong>
-                </h4>
-                <p>If you need help, here's just three tutorials. Just a basic knowledge of HTML is required:</p>
-                <ul class="description">
-                  <li><a href="demos/components.html" title="WebSlides Components">WebSlides Components</a>.</li>
-                  <li><a href="demos/classes.html" title="WebSlides Classes">WebSlides Classes</a>.</li>
-                  <li><a href="demos/media.html" title="WebSlides Media">WebSlides Media: images, videos...</a></li>
-                </ul>
-              </div>
-              <div class="column">
-                <figure><img class="aligncenter" src="static/images/setup.png" alt="WebSlides Files"></figure>
-              </div>
-              <div class="column">
-                <h4>
-                  <svg class="fa-cubes">
-                    <use xlink:href="#fa-cubes"></use>
-                  </svg>
-                  <strong>Built to expand</strong>
-                </h4>
-                <p>The best way to <strong>inspire with your content</strong> is to connect on a personal level:</p>
-                <ul class="description">
-                  <li>Background images: <a href="http://unsplash.com">Unsplash</a>.</li>
-                  <li>CSS animations: <a href="https://daneden.github.io/animate.css/">Animate.css</a>.</li>
-                  <li>Longforms: <a href="http://michalsnik.github.io/aos/"> Animate on scroll</a>.</li>
-                </ul>
+        <!-- slides=06 -->
+        <section class="fullscreen bg-white slide-bottom">
+          <div class="card-50">
+            <figure>
+              <img src="./static/images/happy-work-team.jpg" alt="The cucumber app">
+            </figure>
+            <div class="flex-content">
+              <div class="wrap aligncenter">
+                <img src="./static/images/logos/logo.png"/>
+                <h1 class="text-apple">The <strong>cucumber</strong> app</h1>
+                  <p>
+                    <a class="button zoomIn radius text-apple"
+                        href="https://thecucumber.app/cucumber-app-latest.zip"
+                        title="Download The cucumber app for free">
+                      Download now
+                    </a>
+                  </p>
               </div>
             </div>
-            <!--end .grid -->
           </div>
-        </section>
-        <section class="aligncenter">
-          <!-- .wrap = container (width: 90%) -->
-          <div class="wrap">
-            <h2><strong>Ready to Start?</strong> </h2>
-            <p class="text-intro">Create your own presentation instantly. <br>120+ premium slides ready to use.</p>
-            <p>
-              <a href="https://webslides.tv/webslides-latest.zip" class="button" title="Download WebSlides">
-                <svg class="fa-cloud-download">
-                  <use xlink:href="#fa-cloud-download"></use>
-                </svg>
-                Free Download
-              </a>
-              <span class="try">
-                <a href="https://www.paypal.me/jlantunez/8" title="Thanks :)">
-                  <svg class="fa-paypal">
-                    <use xlink:href="#fa-paypal"></use>
-                  </svg>
-                  Pay what you want.
-                </a>
-              </span>
-            </p>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <section class="slide-bottom">
-          <div class="wrap">
-            <div class="content-right text-serif">
-              <h2>
-                <strong>Thanks.</strong>
-                <a target="_blank" title="Share on Twitter" href="https://twitter.com/intent/tweet?text=Finally,%20everything%20you%20need%20to%20make%20HTML%20presentations%20in%20a%20fast/beautiful%20way.%20@WebSlides%20=%20Good%20karma%20&mdash;%20https://webslides.tv">
-                  <svg class="fa-twitter">
-                    <use xlink:href="#fa-twitter"></use>
-                  </svg>
-                </a>
-              </h2>
-              <p>People share content that makes them feel inspired. WebSlides is a very effective way to engage young audiences, customers, and teams.</p> 
-              <p>Best,<br> <a href="https://twitter.com/jlantunez">@jlantunez</a>, <a href="https://twitter.com/belelros">@belelros</a>, and <a href="https://twitter.com/luissacristan">@luissacristan</a>.</p>
-            </div>
-            <!-- .end .content-right -->
-          </div>
-          <!-- .end .wrap -->
         </section>
 
       </article>
@@ -373,57 +332,31 @@
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
     <script>
-      window.ws = new WebSlides({
-        changeOnClick: true,
-        loop: false,
-      });
-
-      var slidesShown = {}
-
-      window.ws.el.addEventListener('ws:slide-change', function (e) {
-        var noOfSlides = event.detail.slides;
-        var currentSlide = event.detail.currentSlide;
-        
-        slidesShown[currentSlide] = true;
-
-        if (Object.keys(slidesShown).length >= noOfSlides - 1) {
-          if (window.frameElement) {
-            // We are inside an iframe
-            var to = setTimeout(function(){
-              parent.closeFeatures();
-              clearTimeout(to)
-            }, 2500);
-          }
-        }
-      });
-    </script>
-
-    <script>
-      window.onload = function() { 
-        // flash the navigation menu
-        var header = document.querySelector("header[role='banner']");
-        header.style.opacity = 1;
-        setTimeout(function() { 
-          header.style.opacity = 0;
-          header.onmouseover = function() {
-            header.style.opacity = 1;
-          }
-          header.onmouseleave = function() {
-            header.style.opacity = 0;
-          }
-          header.ontouchenter = function() {
-            header.style.opacity = 1;
-          }
-          header.ontouchleave = function() {
-            header.style.opacity = 0;
-          }
-        }, 2500);
-      }
-
+      window.ws = new WebSlides();
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
+    <script>
+      /* When the user clicks on the button, 
+      toggle between hiding and showing the dropdown content */
+      function menuToggle() {
+        document.getElementById("myDropdown").classList.toggle('show');
+      }
 
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.hamburger')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
   </body>
 </html>
