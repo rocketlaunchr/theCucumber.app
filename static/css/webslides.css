@@ -50,6 +50,7 @@
   18. Print
   19. Colors
   20. Dropdown menu
+  21. Accordion
 ----------------------------------------------------------------------------------- */
 /*
 =========================================
@@ -1975,21 +1976,23 @@ img size recommended:800x600px
             flex: inherit; }
   .flexblock.gallery li figcaption {
     padding: 1.6rem;
-    position: relative; }
-    .flexblock.gallery li figcaption:before {
-      content: '';
-      height: 0;
-      left: 20%;
-      margin-left: -.5em;
-      position: absolute;
-      top: .4rem;
-      -webkit-transform: rotate(135deg);
-              transform: rotate(135deg);
-      -webkit-transform-origin: 0 0;
-              transform-origin: 0 0;
-      -webkit-transition: .1s;
-      transition: .1s;
-      width: 0; }
+    position: relative; 
+    flex-grow: 1;
+  }
+  .flexblock.gallery li figcaption:before {
+    content: '';
+    height: 0;
+    left: 20%;
+    margin-left: -.5em;
+    position: absolute;
+    top: .4rem;
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transition: .1s;
+    transition: .1s;
+    width: 0; }
   .flexblock.gallery li:hover figcaption:before {
     top: .3rem; }
 
@@ -2034,7 +2037,9 @@ img size recommended:800x600px
 
 @media (min-width: 1024px) {
   .flexblock.gallery li {
-    width: 21%; }
+    width: 21%; 
+    display: flex;
+  }
   .grid.sm .flexblock.gallery li,
   .grid.ms .flexblock.gallery li {
     width: 29%; }
@@ -3549,7 +3554,11 @@ Gallery li+.overlay+image
 .flexblock.gallery li:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.08);
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.08); }
-
+.flexblock.gallery li figure {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
 .gallery li footer {
   border-top: 1px solid rgba(0, 20, 80, 0.1); }
 
@@ -3570,7 +3579,7 @@ Plans / Pricing
 =========================================== */
 .plans > li div,
 .flexblock.plans li:hover div {
-  background-color: #fff; }
+  background-color: #f2f2f2; }
 
 .plans > li:hover,
 .plans > li:nth-child(2) {
@@ -3919,6 +3928,7 @@ Dropdown menu
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 2.4rem;
+  cursor: pointer;
 }
 
 .dropdown-content a {
@@ -3938,3 +3948,56 @@ Dropdown menu
 }
 
 .show {display: block; right: 0;}
+
+/*============================
+Accordion
+============================== */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  border-bottom: 1px solid #fff;
+  font-size: 1.4rem;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+.accordion.text-subtitle {
+  letter-spacing: .02rem;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.panel h4 {
+  margin-top: 3.2rem;
+}
+.panel p {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
