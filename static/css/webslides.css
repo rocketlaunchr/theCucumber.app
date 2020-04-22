@@ -1064,6 +1064,10 @@ h3 [class*='bg-'] {
   padding: .4rem .8rem; }
 
 /*== 2.2. Typography Classes = .text- == */
+.text-logo {
+  font-family: 'Nunito';
+  font-size: 2.4rem;
+}
 .text-intro,
 [class*='content-'] p {
   font-size: 2.4rem;
@@ -1319,25 +1323,39 @@ header.features:hover {
   opacity: 1; 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 568px) {
   footer .alignleft,
   footer .alignright {
     display: block;
-    float: none; } }
+    float: none; 
+  }
+
+  .logo span {
+    display: none;
+  }
+
+  /* .logo a {
+    padding-left: 6rem;
+  } */
+}
 
 /*=== 3.1. Logo === */
-.logo {
-  text-transform: lowercase; }
+.logo a {
+  background: url("../images/logos/logo.png") no-repeat 0 0;
+  background-size: 4.8rem;
+  float: left;
+  height: 4.8rem;
+  /* text-indent: -4000px; */
+  /*If you remove text-indent and add: */
+  /* padding-left: 6rem; */
+  vertical-align: middle;
+  width: 4.8rem; }
+
+@media (min-width: 569px) {
   .logo a {
-    background: url("../images/logos/logo.png") no-repeat 0 0;
-    background-size: 4.8rem;
-    float: left;
-    height: 4.8rem;
-    text-indent: -4000px;
-    /*If you remove text-indent and add: */
-    /*padding-left: 6rem;*/
-    vertical-align: middle;
-    width: 4.8rem; }
+    padding-left: 6rem;
+  }
+}
 
 /*=========================================
 4. Navigation
@@ -3385,7 +3403,8 @@ h1 span {
 Header/Nav
 =========================================== */
 header[role='banner'] {
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: #ffffff;
 }
 
 .logo a {
