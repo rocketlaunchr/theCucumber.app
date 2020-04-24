@@ -325,7 +325,10 @@
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
     <script>
-      window.ws = new WebSlides();
+      window.ws = new WebSlides({
+        changeOnClick: true,
+        loop: false,
+      });
     </script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
