@@ -1485,7 +1485,9 @@ section,
   /* Fixed/Visible header?
   padding:8.2rem 0 0 0;
   */ }
-
+.fullscreen-top {
+  padding:8.2rem 0 0 0;
+}
 /* slide alignment - top */
 .slide-top {
   -webkit-box-pack: start;
