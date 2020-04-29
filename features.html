@@ -206,12 +206,53 @@
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
     <script>
+
+      var nextSlideTimer;
+      var slidesShown = {}
+
+      document.body.addEventListener('ws:init', function (e) {
+        // Go to next slide
+        if (nextSlideTimer !== undefined) {
+          clearTimeout(nextSlideTimer)
+        }
+        nextSlideTimer = setTimeout(function(){
+          window.ws.goNext()
+        }, 4000);
+      });
+
       window.ws = new WebSlides({
         changeOnClick: true,
         loop: false,
       });
-    </script>
 
+
+      window.ws.el.addEventListener('ws:slide-change', function (e) {
+        var noOfSlides = event.detail.slides;
+        var currentSlide = event.detail.currentSlide;
+
+        slidesShown[currentSlide] = true;
+
+        // Go to next slide
+        if (nextSlideTimer !== undefined) {
+          clearTimeout(nextSlideTimer)
+        }
+        nextSlideTimer = setTimeout(function(){
+          window.ws.goNext()
+        }, 3500);
+
+        if (Object.keys(slidesShown).length >= noOfSlides - 1) {
+          if (window.frameElement) {
+            // We are inside an iframe
+            var to = setTimeout(function(){
+              parent.closeFeatures();
+              clearTimeout(to)
+            }, 2500);
+          }
+        }
+      });
+
+    </script>
+    <script type="text/javascript" defer>document.body.dispatchEvent(new Event('ws:init'));</script>
 
     <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
     <script defer src="static/js/svg-icons.js"></script>
