@@ -53,7 +53,7 @@
 
   </head>
   <body>
-    <header class="features" role="banner">
+    <header class="features-nav" role="banner">
       <nav role="navigation">
         <p class="logo">
           <a href="./index.html" title="The cucumber app">
@@ -71,7 +71,8 @@
               <strong>Register</strong>
             </a>
           </li>
-          <li>
+          <!-- Menu not visible to the user -->
+          <!-- <li>
             <ul class="dropdown">
               <li>
                 <span class="hamburger" onclick="menuToggle()" title="Menu"></span>
@@ -93,234 +94,114 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </header>
 
     <main role="main">
       <article id="webslides" class="vertical">
-        <!-- slides=01 -->
-        <section class="fullscreen bg-white">
+        <section class="bg-gradient-v">
+          <span class="background dark" style="background-image:url('./static/images/productivity-and-focus-in-the-blink-of-an-eye.jpg')"></span>
+          <div class="wrap size-60 fadeInUp slow">
+            <h1 class="text-apple"><strong>Productivity</strong> and <strong>focus</strong> <br/> in the blink of an eye.</h1>
+            <p class="text-apple text-intro">
+              Digital Eye Strain negatively impacts 90% of employees. Yet eye strain remains one of the most
+              overlooked health issues in the workplace.
+            </p>
+          </div>
+        </section>
+        <!-- slides=02 -->
+        <section class="bg-gradient-v fullscreen">
           <div class="card-50">
-            <figure>
-              <img src="./static/images/the-cucumber-app.png" alt="The cucumber app">
-            </figure>
             <div class="flex-content">
-              <div class="wrap aligncenter">
-                <img src="./static/images/logos/logo.png"/>
-                <h1 class="text-apple">The <strong>cucumber</strong> app</h1>
-                <p class="text-intro">We provide a sophisticated analytics platform to help you improve your conversions and rocket grow your business.
+              <div class="wrap fadeInUp slow">
+                <h2 class="text-apple">It’s time for a <strong>change</strong></h2>
+                <p class="text-apple text-intro">
+                  Backpain, migraines, eye-strain - our digital work practices need to change.
                 </p>
-                <p>
-                  <a class="button zoomIn radius text-apple"
-                      href="https://thecucumber.app/cucumber-app-latest.zip"
-                      title="Download The cucumber app for free">
-                    Download now
-                  </a>
-                </p>
-
               </div>
             </div>
-          </div>
-         </section>
-        <!-- slides=02 -->
-        <section>
-          <div class="wrap aligncenter zoomIn">
-            <h2>The little things mean the most</h2>
+            <figure>
+              <img src="./static/images/it-is-time-for-a-change.jpg"
+                   alt="Productivity and focus in the blink of an eye" />
+            </figure>
           </div>
         </section>
         <!-- slides=03 -->
-        <section class="bg-primary">
+        <section class="slide-bottom">
+          <span class="background light" style="background-image:url('./static/images/change-your-habits.png')"></span>
           <div class="wrap">
-            <h2>Features</h2>
-            <ul class="flexblock features">
-              <li>
-                <div>
-                  <h2>
-                    <span>&rarr;</span>
-                    Simple Navigation
-                  </h2>
-                  with arrow keys, presenter...
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <svg class="fa-link">
-                      <use xlink:href="#fa-link"></use>
-                    </svg>
-                    Permalinks
-                  </h2>
-                  Go to a specific slide.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <svg class="fa-clock-o">
-                      <use xlink:href="#fa-clock-o"></use>
-                    </svg>
-                    Slide Counter
-                  </h2>
-                  Current/Total number.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <span>40<sup>+</sup></span>
-                    Beautiful Components
-                  </h2>
-                  Covers, cards, quotes...
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <svg class="fa-text-height">
-                      <use xlink:href="#fa-text-height"></use>
-                    </svg>
-                    Vertical Rhythm
-                  </h2>
-                  Use multiples of 8.
-                </div>
-              </li>
-              <li>
-                <div>
-                  <h2>
-                    <span>500<sup>+</sup></span>
-                    SVG Icons
-                  </h2>
-                  Font Awesome Kit.
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <!-- slides=04 -->
-        <section>
-          <div class="wrap">
-            <h2 class="aligncenter text-apple">Choose one plan</h2>
-            <ul class="flexblock plans blink">
-              <li>
-                <a href="#" title="Register">
-                  <h2>Basic</h2>
-                  <div>
-                    <span class="price">Free</span>
-                    <p>Good karma. Just the right features. 100% customizable. Make it yours.</p>
-                    <span class="button ghost radius">Select</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Purchase">
-                  <h2>Medium</h2>
-                  <div>
-                    <span class="price"><sup>$</sup>4,99 <sup>/month</sup></span>
-                    <p>Content is for demo purposes only. Minimum effort, amazing results.</p>
-                    <span class="button radius">Buy Now</span>
-                  </div>
-                </a>
-              </li>
-              <li>
-                <a href="#" title="Purchase">
-                  <h2>Premium <sup>(save 20%)</sup></h2>
-                  <div>
-                    <span class="price"><sup>$</sup>40 <sup>/year</sup></span>
-                    <p>Prototype faster. Create landings and portfolios. Unlimited projects.</p>
-                    <span class="button ghost radius">Select</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <!-- slides=05 -->
-        <section class="bg-primary">
-          <div class="wrap">
-            <h2><strong>WebSlides Demos</strong></h2>
-            <p>Contribute on <a href="https://github.com/webslides/webslides" title="Contribute on Github">Github</a>. <span class="alignright"><a href="demos/index.html" title="WebSlides Demos">View all &rsaquo;</a></span></p>
-            <ul class="flexblock gallery">
-              <li>
-                <a href="demos/why-webslides.html" title="Why WebSlides?">
-                  <figure>
-                    <img alt="Thumbnail Why WebSlides?" src="https://webslides.tv/static/images/demos-why.png">
-                    <figcaption>
-                      <h2>Why WebSlides?</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/landings.html" title="Landings">
-                  <figure>
-                    <img alt="Thumbnail Landings" src="https://webslides.tv/static/images/demos-landings.png">
-                    <figcaption>
-                      <h2>Landings</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/portfolios.html" title="Portfolios">
-                  <figure>
-                    <img alt="Thumbnail Portfolios" src="https://webslides.tv/static/images/demos-portfolios.png">
-                    <figcaption>
-                      <h2>Portfolios</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-              <li>
-                <a href="demos/keynote.html" title="Apple Keynote">
-                  <figure>
-                    <img alt="Thumbnail Apple Keynote" src="https://webslides.tv/static/images/demos-apple.png">
-                    <figcaption>
-                      <h2>Apple Keynote</h2>
-                    </figcaption>
-                  </figure>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- .end .wrap -->
-        </section>
-        <!-- slides=06 -->
-        <section class="fullscreen bg-white slide-bottom">
-          <div class="card-50">
-            <figure>
-              <img src="./static/images/happy-work-team.jpg" alt="The cucumber app">
-            </figure>
-            <div class="flex-content">
-              <div class="wrap aligncenter">
-                <img src="./static/images/logos/logo.png"/>
-                <h1 class="text-apple">The <strong>cucumber</strong> app</h1>
-                  <p>
-                    <a class="button zoomIn radius text-apple"
-                        href="https://thecucumber.app/cucumber-app-latest.zip"
-                        title="Download The cucumber app for free">
-                      Download now
-                    </a>
-                  </p>
-              </div>
+            <div class="content-right bg-trans-gradient fadeInUp slow">
+              <p class="text-apple text-intro">It’s bad for business.</p>
+              <h2 class="text-apple">Let’s <strong>solve</strong> it.</h2>
             </div>
           </div>
         </section>
-
+        <!-- slides=04 -->
+        <section class="bg-gradient-v">
+          <span class="background dark" style="background-image:url('./static/images/increase-workers-productivity.jpg')"></span>
+          <div class="wrap size-60 fadeInUp slow">
+            <p class="text-context text-apple text-intro"><span class="text-logo">theCucumber.app</span> changes the way we look at workplace productivity. Scheduled micro-breaks. Blink alarms. Presentation pauses.</p>
+            <h2 class="text-apple">It’s <strong>time</strong> to <strong>refocus</strong></h2>
+          </div>
+        </section>
+        <!-- slides=05 -->
+        <section class="slide-bottom">
+          <span class="background light" style="background-image:url('./static/images/happy-workplace-with-thecucumber-app.jpg')"></span>
+          <div class="wrap">
+            <div class="content-left bg-trans-gradient fadeInUp slow">
+              <h2 class="text-apple">You worker’s will <strong>feel</strong> the <strong>difference</strong></h2>
+              <p class="text-apple text-intro">The benefits start within 1 week.</p>
+            </div>
+          </div>
+        </section>
+        <!-- slides=06 -->
+        <section class="bg-gradient-v">
+          <span class="background dark" style="background-image:url('./static/images/work-from-everywhere-with-the-cucumber-app.jpg')"></span>
+          <div class="wrap size-60 fadeInUp slow">
+            <h1 class="text-apple">Work <strong>better</strong> from <strong>anywhere</strong></h1>
+            <p class="text-apple text-intro">Synchroized breaks for all team members. In-house and remote.</p>
+          </div>
+        </section>
+        <!-- slides=07 -->
+        <section class="bg-gradient-v fullscreen">
+          <div class="card-50">
+            <div class="flex-content">
+              <div class="wrap fadeInUp slow">
+                <h2 class="text-apple">No excuses</h2>
+                <p class="text-apple text-intro">
+                  No skipping lets you coach your team to better digital habits, today.
+                </p>
+              </div>
+            </div>
+            <figure>
+              <img src="./static/images/start-your-exercise.jpg"
+                   alt="Start your exercise at your own pace" />
+            </figure>
+          </div>
+        </section>
+        <!-- slides=08 -->
+        <section class="bg-gradient-v">
+          <span class="background dark" style="background-image:url('./static/images/happy-work-team.jpg')"></span>
+          <div class="wrap">
+            <h2 class="text-apple">Better digital health. Better workplaces.</h2>
+            <ul class="flexblock features aligncenter">
+              <li>
+                <h3>More productivity</h3>
+              </li>
+              <li>
+                <h3>More creativity</h3>
+              </li>
+              <li>
+                <h3>More happiness</h3>
+              </li>
+            </ul>
+            <p class="text-apple text-intro">Your team will <strong>thank you</strong>.</p>
+          </div>
+        </section>
       </article>
-      <!-- end article -->
     </main>
-    <!-- end main -->
-
-   <!-- A global footer
-
-     <footer role="contentinfo">
-      <div class="wrap">
-        <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
-      </div>
-    </footer>  -->
 
     <!-- Required -->
     <script src="static/js/webslides.js"></script>
@@ -329,37 +210,6 @@
         changeOnClick: true,
         loop: false,
       });
-
-      var nextSlideTimer;
-      var slidesShown = {}
-
-      window.ws.el.addEventListener('ws:slide-change', function (e) {
-        var noOfSlides = event.detail.slides;
-        var currentSlide = event.detail.currentSlide;
-
-        slidesShown[currentSlide] = true;
-
-        // Go to next slide
-        if (nextSlideTimer !== undefined) {
-          clearTimeout(nextSlideTimer)
-        }
-        nextSlideTimer = setTimeout(function(){
-          window.ws.goNext()
-        }, 3500);
-
-        if (Object.keys(slidesShown).length >= noOfSlides - 1) {
-          if (window.frameElement) {
-            // We are inside an iframe
-            var to = setTimeout(function(){
-              parent.closeFeatures();
-              clearTimeout(to)
-            }, 2500);
-          }
-        }
-
-
-      });
-
     </script>
 
 
