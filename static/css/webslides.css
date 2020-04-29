@@ -1157,7 +1157,7 @@ h1 span {
     display: block;
     height: .2rem;
     margin-bottom: .6rem;
-    width: 12rem; }
+    width: 19rem; }
     .column .text-context:before {
       width: 100%; }
   .text-context.text-uppercase {
@@ -1316,10 +1316,10 @@ header,
   bottom: 0;
   top: auto; }
 
-header.features {
+header.features-nav {
   opacity: 0; 
 }
-header.features:hover {
+header.features-nav:hover {
   opacity: 1; 
 }
 
@@ -1556,8 +1556,8 @@ form[class*='bg-'] {
 /*=== BG Positions === */
 .background {
   background-position: center;
-  /* background-size: cover; */
-  background-size: contain;
+  background-size: cover;
+  /* background-size: contain; */
   /*fullscreen video
     <video class="background-video">
   */ }
@@ -3298,8 +3298,8 @@ Slides - Backgrounds <section class="bg-primary">
 .bg-apple,
 [class*='bg-black'],
 [class*='bg-gradient-'] {
-  color: #167D7F;
-  text-shadow: 0 1px 0 #fff; }
+  color: #fff;
+  text-shadow: 0 1px 0 #013; }
 
 .bg-light p {
   color: #456; }
@@ -3316,8 +3316,8 @@ Slides - Backgrounds <section class="bg-primary">
 
 /*Covers/Longforms...*/
 .bg-trans-gradient {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(transparent));
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%); }
+  background: -webkit-gradient(linear, left bottom, left top, from(rgb(22, 125, 127, .8)), to(rgb(41, 160, 177, .8)));
+  background: linear-gradient(to top, rgb(22, 125, 127, .8) 0%, rgb(41, 160, 177, .8) 100%); }
 
 /*Horizontal Gradient*/
 .bg-gradient-h {
@@ -3325,8 +3325,8 @@ Slides - Backgrounds <section class="bg-primary">
 
 /*Vertical Gradient*/
 .bg-gradient-v {
-  background: -webkit-gradient(linear, left bottom, left top, from(#62b), to(#32b));
-  background: linear-gradient(to top, #62b 0%, #32b 100%); }
+  background: -webkit-gradient(linear, left bottom, left top, from(#167D7F), to(#29A0B1));
+  background: linear-gradient(to top, #167D7F 0%, #29A0B1 100%); }
 
 /*Radial Gradient*/
 .bg-gradient-r {
@@ -3466,14 +3466,14 @@ nav li.email a:hover {
 /*=========================================
 Features & Clients List
 =========================================== */
-/* .features li,
+.features li,
 .clients li {
-  background-color: rgba(255, 255, 255, 0.9); }
+  background-color: rgba(255, 255, 255, 0.1); }
 
 [class*='bg-'] .features li,
 [class*='bg-'] .clients li {
-  background-color: rgba(255, 255, 255, 0.7);
-} */
+  background-color: rgba(255, 255, 255, 0.1);
+}
 
 /* .features li:hover,
 .clients li:hover {
@@ -3570,7 +3570,7 @@ Gallery li+.overlay+image
           box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.03); }
 
 .gallery li figcaption {
-  background-color: #fff; }
+  background-color: #167D7F; }
 
 .flexblock.gallery li:hover {
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.08);
@@ -3593,7 +3593,7 @@ Gallery li+.overlay+image
 /*Arrow */
 .gallery li figcaption:before {
   border: 0.8rem solid #000;
-  border-color: transparent transparent #fff #fff; }
+  border-color: transparent transparent #167D7F #167D7F; }
 
 /*=========================================
 Plans / Pricing
