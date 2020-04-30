@@ -1592,6 +1592,8 @@ form[class*='bg-'] {
     background-position: center bottom; }
   @media (max-width: 880px) {
     .background {background-size: cover;}
+    .background-contain {background-size: contain;}
+    .background-left {background-position: left;}
   }
   @media (min-width: 1024px) {
     .background-left-bottom {
@@ -1625,7 +1627,8 @@ form[class*='bg-'] {
   [class*='background-'] {
     -webkit-animation: fadeIn ease-in .2;
             animation: fadeIn ease-in .2;
-    opacity: .2; }
+    /* opacity: .2;  */
+  }
   .background-video {
     opacity: .8; } }
 
