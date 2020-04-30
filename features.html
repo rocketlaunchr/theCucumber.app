@@ -101,14 +101,22 @@
 
     <main role="main">
       <article id="webslides" class="vertical">
-        <section class="bg-gradient-v">
-          <span class="background dark" style="background-image:url('./static/images/productivity-and-focus-in-the-blink-of-an-eye.jpg')"></span>
-          <div class="wrap size-60 fadeInUp slow">
-            <h1 class="text-apple"><strong>Productivity</strong> and <strong>focus</strong> <br/> in the blink of an eye.</h1>
-            <p class="text-apple text-intro">
-              Digital Eye Strain negatively impacts 90% of employees. Yet eye strain remains one of the most
-              overlooked health issues in the workplace.
-            </p>
+        <!-- slides=01 -->
+        <section class="bg-gradient-v fullscreen">
+          <div class="card-50">
+            <figure>
+              <img src="./static/images/productivity-and-focus-in-the-blink-of-an-eye.jpg"
+                   alt="Productivity and focus in the blink of an eye" />
+            </figure>
+            <div class="flex-content">
+              <div class="wrap fadeInUp slow">
+                <h1 class="text-apple"><strong>Productivity</strong> and <strong>focus</strong> <br/> in the blink of an eye.</h1>
+                <p class="text-apple text-intro">
+                  Digital Eye Strain negatively impacts 90% of employees. Yet eye strain remains one of the most
+                  overlooked health issues in the workplace.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <!-- slides=02 -->
@@ -130,43 +138,55 @@
         </section>
         <!-- slides=03 -->
         <section class="slide-bottom">
-          <span class="background light" style="background-image:url('./static/images/change-your-habits.png')"></span>
+          <span class="background" style="background-image:url('./static/images/change-your-habits.png')"></span>
           <div class="wrap">
-            <div class="content-right bg-trans-gradient fadeInUp slow">
+            <div class="alignright size-40 bg-trans-gradient fadeInUp slow">
               <p class="text-apple text-intro">It’s bad for business.</p>
               <h2 class="text-apple">Let’s <strong>solve</strong> it.</h2>
             </div>
           </div>
         </section>
         <!-- slides=04 -->
-        <section class="bg-gradient-v">
-          <span class="background dark" style="background-image:url('./static/images/increase-workers-productivity.jpg')"></span>
-          <div class="wrap size-60 fadeInUp slow">
-            <p class="text-context text-apple text-intro"><span class="text-logo">theCucumber.app</span> changes the way we look at workplace productivity. Scheduled micro-breaks. Blink alarms. Presentation pauses.</p>
-            <h2 class="text-apple">It’s <strong>time</strong> to <strong>refocus</strong></h2>
+        <section class="slide-bottom">
+          <span class="background" style="background-image:url('./static/images/increase-workers-productivity.jpg')"></span>
+          <div class="wrap">
+            <div class="alignleft size-40 bg-trans-gradient fadeInUp slow">
+              <div class="wrap">
+                <p class="text-context text-apple text-intro"><span class="text-logo">theCucumber.app</span> changes the way we look at workplace productivity. Scheduled micro-breaks. Blink alarms. Presentation pauses.</p>
+                <h2 class="text-apple">It’s <strong>time</strong> to <strong>refocus</strong></h2>
+              </div>
+            </div>
+
           </div>
         </section>
         <!-- slides=05 -->
         <section class="slide-bottom">
-          <span class="background light" style="background-image:url('./static/images/happy-workplace-with-thecucumber-app.jpg')"></span>
+          <span class="background" style="background-image:url('./static/images/happy-workplace-with-thecucumber-app.jpg')"></span>
           <div class="wrap">
-            <div class="content-left bg-trans-gradient fadeInUp slow">
+            <div class="alignright size-40 bg-trans-gradient fadeInUp slow">
               <h2 class="text-apple">You worker’s will <strong>feel</strong> the <strong>difference</strong></h2>
               <p class="text-apple text-intro">The benefits start within 1 week.</p>
             </div>
           </div>
         </section>
         <!-- slides=06 -->
-        <section class="bg-gradient-v">
-          <span class="background dark" style="background-image:url('./static/images/work-from-everywhere-with-the-cucumber-app.jpg')"></span>
-          <div class="wrap size-60 fadeInUp slow">
-            <h1 class="text-apple">Work <strong>better</strong> from <strong>anywhere</strong></h1>
-            <p class="text-apple text-intro">Synchroized breaks for all team members. In-house and remote.</p>
+        <section class="slide-bottom">
+          <span class="background" style="background-image:url('./static/images/work-from-everywhere-with-the-cucumber-app.jpg')"></span>
+          <div class="wrap">
+            <div class="alignright size-40 bg-trans-gradient fadeInUp slow">
+              <div class="wrap"></div>
+              <h1 class="text-apple">Work <strong>better</strong> from <strong>anywhere</strong></h1>
+              <p class="text-apple text-intro">Synchroized breaks for all team members. In-house and remote.</p>
+            </div>
           </div>
         </section>
         <!-- slides=07 -->
         <section class="bg-gradient-v fullscreen">
           <div class="card-50">
+            <figure>
+              <img src="./static/images/start-your-exercise.jpg"
+                   alt="Start your exercise at your own pace" />
+            </figure>
             <div class="flex-content">
               <div class="wrap fadeInUp slow">
                 <h2 class="text-apple">No excuses</h2>
@@ -175,15 +195,11 @@
                 </p>
               </div>
             </div>
-            <figure>
-              <img src="./static/images/start-your-exercise.jpg"
-                   alt="Start your exercise at your own pace" />
-            </figure>
           </div>
         </section>
         <!-- slides=08 -->
         <section class="bg-gradient-v">
-          <span class="background dark" style="background-image:url('./static/images/happy-work-team.jpg')"></span>
+          <span class="background light" style="background-image:url('./static/images/happy-work-team.jpg')"></span>
           <div class="wrap">
             <h2 class="text-apple">Better digital health. Better workplaces.</h2>
             <ul class="flexblock features aligncenter">
@@ -212,9 +228,6 @@
       });
     </script>
 
-
-    <!-- OPTIONAL - svg-icons.js (fontastic.me - Font Awesome as svg icons) -->
-    <script defer src="static/js/svg-icons.js"></script>
     <script>
       /* When the user clicks on the button, 
       toggle between hiding and showing the dropdown content */
