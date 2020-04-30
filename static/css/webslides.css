@@ -1067,6 +1067,7 @@ h3 [class*='bg-'] {
 .text-logo {
   font-family: 'Nunito';
   font-size: 2.4rem;
+  line-height: 4.8rem;
 }
 .text-intro,
 [class*='content-'] p {
@@ -1291,7 +1292,7 @@ footer,
 
 header p,
 footer p {
-  line-height: 4.8rem;
+  line-height: 3.8rem;
   margin-bottom: 0; }
 
 header[role='banner'] img,
@@ -1316,11 +1317,15 @@ header,
   bottom: 0;
   top: auto; }
 
-header.features-nav {
+header.header-nav {
   opacity: 0; 
 }
-header.features-nav:hover {
+header.header-nav:hover {
   opacity: 1; 
+}
+
+.header-custom {
+  padding: 0rem 2.4rem;
 }
 
 @media (max-width: 568px) {
@@ -1370,13 +1375,13 @@ nav ul {
   /*====align left====*/
   -webkit-box-pack: start;
       -ms-flex-pack: start;
-          justify-content: flex-start;
+          /* justify-content: flex-start; */
   /* ==== align center ====*/
   /*justify-content: center; */
   /*====align right====*/
   /* justify-content: flex-end; */
   /*====separated columns li a====*/
-  /* justify-content: space-between; */
+  justify-content: space-between;
   /*====separated columns centered li a====*/
   /*justify-content: space-around;*/ }
   nav ul li {
@@ -1397,9 +1402,9 @@ nav[role='navigation'] li a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  line-height: 4.8rem;
+  line-height: 3.8rem;
   max-width: 100%;
-  padding: 0 1.6rem;
+  padding: 0;
   position: relative;
   text-decoration: none; }
   nav[role='navigation'] li a svg {
@@ -1409,7 +1414,8 @@ header nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin: 0; }
+  margin: 0; 
+}
 
 nav.aligncenter ul,
 .aligncenter nav ul {
@@ -1423,6 +1429,13 @@ nav.navbar ul li {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto; }
+
+.nav-custom {
+  height: 5.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 @media (max-width: 568px) {
   nav.navbar ul {
@@ -2778,7 +2791,7 @@ button {
   line-height: 4rem;
   padding: 0 1.2rem;
   text-align: center;
-  min-width: 102px;
+  min-width: 91px;
   border-style: solid;
   border-width: 1px;
   box-shadow: none;
@@ -3405,7 +3418,7 @@ Header/Nav
 =========================================== */
 header[role='banner'] {
   /* background-color: transparent; */
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.48);
 }
 
 .logo a {
@@ -3935,7 +3948,6 @@ Dropdown menu
 .dropdown {
   position: relative;
   display: inline-block;
-  margin: 5px 0 0 0;
 }
 
 .dropdown-content {
@@ -3963,8 +3975,12 @@ Dropdown menu
   margin-left: 0 !important;
 }
 
+.dropdown-content ul li a {
+  padding: 1rem 0;
+}
 .dropdown-content ul li a:hover {
-  background-color: #DDFFE7;
+  background-color: #167D7F;
+  color: #ffffff;
 }
 
 .show {display: block; right: 0;}

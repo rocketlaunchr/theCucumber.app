@@ -53,8 +53,8 @@
 
   </head>
   <body>
-    <header role="banner">
-      <nav role="navigation">
+    <header role="banner" class="header-custom">
+      <nav role="navigation" class="nav-custom">
         <p class="logo">
           <a href="index.html" title="The cucumber app">
             <span class="text-logo">theCucumber.app</span>
@@ -99,10 +99,10 @@
     </header>
 
     <main role="main">
-      <article id="webslides" class="vertical">
+      <article>
         <!-- slides=01 -->
-        <section class="bg-gradient-v">
-          <span class="background light" style="background-image:url('./static/images/take-a-break.jpg')"></span>
+        <section>
+          <span class="background" style="background-image:url('./static/images/take-a-break.jpg')"></span>
           <div class="wrap">
             <div class="alignright size-40 bg-trans-dark">
               <div class="wrap aligncenter">
@@ -523,11 +523,7 @@
       </article>
     </main>
 
-    <!-- Required -->
-    <script src="static/js/webslides.js"></script>
-
     <script>
-
       /* scroll to section */
       function scrollToSection(id) {
         var section = document.querySelectorAll('section')[id];
