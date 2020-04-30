@@ -1069,6 +1069,11 @@ h3 [class*='bg-'] {
   font-size: 2.4rem;
   line-height: 4.8rem;
 }
+.text-company {
+  font-family: 'Nunito';
+  color: #167D7F;
+  font-weight: 500;
+}
 .text-intro,
 [class*='content-'] p {
   font-size: 2.4rem;
@@ -1361,7 +1366,13 @@ header.header-nav:hover {
     padding-left: 6rem;
   }
 }
-
+.with-love {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/with-love.svg") no-repeat;
+  background-position-y: bottom;
+}
 /*=========================================
 4. Navigation
 =========================================== */
@@ -2789,12 +2800,12 @@ button {
 .btn-login, .btn-register {
   cursor: pointer;
   display: inline-block;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 4rem;
   padding: 0 1.2rem;
   text-align: center;
-  min-width: 91px;
+  min-width: 76px;
   border-style: solid;
   border-width: 1px;
   box-shadow: none;
