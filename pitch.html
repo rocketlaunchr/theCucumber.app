@@ -39,24 +39,36 @@
     <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
 
     <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="static/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="static/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="static/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
+    <!-- <meta name="theme-color" content="#333333"> -->
 
   </head>
   <body>
     <header class="header-nav header-custom" role="banner">
       <nav role="navigation" class="nav-custom">
         <p class="logo">
-          <a href="./index.html" title="The cucumber app">
+          <a href="./index.html" onclick="if (window.frameElement) { parent.closePitch(); return false}" title="theCucumber.app">
             <span class="text-logo">theCucumber.app</span>
           </a>
         </p>
@@ -71,30 +83,6 @@
               <strong>Register</strong>
             </a>
           </li>
-          <!-- Menu not visible to the user -->
-          <!-- <li>
-            <ul class="dropdown">
-              <li>
-                <span class="hamburger" onclick="menuToggle()" title="Menu"></span>
-              </li>
-              <li id="myDropdown" class="dropdown-content">
-                <ul>
-                  <li>
-                    <a href="./index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="#slide=1">Features</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#research">Research</a>
-                  </li>
-                  <li>
-                    <a href="./index.html#plans">Plans</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-          </li> -->
         </ul>
       </nav>
     </header>
@@ -105,7 +93,7 @@
         <section class="bg-gradient-v fullscreen">
           <div class="card-50">
             <figure>
-              <img src="./static/images/productivity-and-focus-in-the-blink-of-an-eye.jpg"
+              <img src="./static/images/eye-closed.jpg"
                    alt="Productivity and focus in the blink of an eye" />
             </figure>
             <div class="flex-content">
@@ -138,7 +126,7 @@
         </section>
         <!-- slides=03 -->
         <section class="slide-bottom">
-          <span class="background" style="background-image:url('./static/images/change-your-habits.png')"></span>
+          <span class="background" style="background-image:url('./static/images/animated-screenshot.png')"></span>
           <div class="wrap">
             <div class="alignright size-40 bg-trans-gradient fadeInUp slow">
               <p class="text-apple text-intro">It’s bad for business.</p>
@@ -171,7 +159,7 @@
         </section>
         <!-- slides=06 -->
         <section class="slide-bottom">
-          <span class="background background-left" style="background-image:url('./static/images/work-from-everywhere-with-the-cucumber-app.jpg')"></span>
+          <span class="background background-left" style="background-image:url('./static/images/work-remote.jpg')"></span>
           <div class="wrap">
             <div class="alignright size-40 bg-trans-gradient fadeInUp slow">
               <div class="wrap"></div>
@@ -266,29 +254,30 @@
         }
       });
 
+      // flash the navigation menu
+      window.onload = function() { 
+        var header = document.querySelector("header[role='banner']");
+        // header.style.opacity = 1;
+        setTimeout(function() {
+          // header.style.opacity = 0; 
+        //   header.style.opacity = 0;
+        //   header.onmouseover = function() {
+        //     header.style.opacity = 1;
+        //   }
+        //   header.onmouseleave = function() {
+        //     header.style.opacity = 0;
+        //   }
+        //   header.ontouchenter = function() {
+        //     header.style.opacity = 1;
+        //   }
+        //   header.ontouchleave = function() {
+        //     header.style.opacity = 0;
+        //   }
+        }, 2500);
+      }
+
+
     </script>
     <script type="text/javascript" defer>document.body.dispatchEvent(new Event('ws:init'));</script>
-
-    <script>
-      /* When the user clicks on the button, 
-      toggle between hiding and showing the dropdown content */
-      function menuToggle() {
-        document.getElementById("myDropdown").classList.toggle('show');
-      }
-
-      // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.hamburger')) {
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-          var i;
-          for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>
   </body>
 </html>

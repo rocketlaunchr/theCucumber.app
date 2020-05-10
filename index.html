@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- SEO -->
-    <title>The cucumber app</title>
-    <meta name="description" content="We provide a sophisticated analytics platform to help you improve your conversions and rocket grow your business.">
+    <title>theCucumber.app</title>
+    <meta name="description" content="">
 
     <!-- URL CANONICAL -->
     <link rel="canonical" href="https://thecucumber.app/">
@@ -39,28 +39,62 @@
     <meta name="twitter:image" content="static/images/share-webslides.jpg"> <!-- EDIT -->
 
     <!-- FAVICONS -->
-    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
-    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
-    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
-    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
-    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
-    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
-    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="static/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="static/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="static/images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="static/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
-    <meta name="theme-color" content="#333333">
+    <!-- <meta name="theme-color" content="#333333"> -->
+
+    <style>
+    #dimScreen
+    {
+        position:fixed;
+        padding:0;
+        margin:0;
+        z-index: 1000;
+
+        top:0;
+        left:0;
+
+        width: 100%;
+        height: 100%;
+    }
+    </style>
 
   </head>
   <body>
+    <iframe id="dimScreen" frameBorder="0" style="display: none" src="pitch.html"></iframe>
     <header role="banner" class="header-custom">
       <nav role="navigation" class="nav-custom">
         <p class="logo">
-          <a href="index.html" title="The cucumber app">
+          <a href="/" title="The cucumber app">
             <span class="text-logo">theCucumber.app</span>
           </a>
         </p>
         <ul class="text-apple">
+          <li>
+            <a class="btn-login" href="https://github.com/rocketlaunchr/theCucumber.app/releases" target="_blank" title="Download">
+              <strong> Download</strong>
+            </a>
+          </li>
           <li>
             <a class="btn-login" href="https://thecucumber.app/login" title="Login">
               <strong> Login</strong>
@@ -79,16 +113,28 @@
               <li id="myDropdown" class="dropdown-content">
                 <ul>
                   <li>
-                    <a onclick="scrollToSection(0)">Home</a>
+                    <a href="./pitch.html#slide=1">Pitch</a>
                   </li>
                   <li>
-                    <a href="./features.html#slide=1">Features</a>
+                    <a onclick="scrollToSection(4)">Features</a>
                   </li>
                   <li>
-                    <a onclick="scrollToSection(2)">Research</a>
+                    <a onclick="scrollToSection(5)">Read Research</a>
+                  </li>
+<!--                   <li>
+                    <a onclick="scrollToSection(2)">Testimonials</a>
                   </li>
                   <li>
-                    <a onclick="scrollToSection(3)">Plans</a>
+                    <a onclick="scrollToSection(2)">Case Studies</a>
+                  </li> -->
+                  <li>
+                    <a onclick="scrollToSection(6)">Plans</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/rocketlaunchr/theCucumber.app/releases" target="_blank" >Download</a>
+                  </li>
+                  <li>
+                    <a onclick="scrollToSection(3)">Contact Us</a>
                   </li>
                 </ul>
               </li>
@@ -100,24 +146,20 @@
 
     <main role="main">
       <article>
-        <!-- slides=01 -->
+        <!-- slides=00 -->
         <section>
-          <span class="background" style="background-image:url('./static/images/take-a-break.jpg')"></span>
+          <span class="background" style="background-image:url('./static/images/animated-screenshot.png')"></span>
           <div class="wrap">
             <div class="alignright size-40 bg-trans-dark">
               <div class="wrap aligncenter">
-                <img src="./static/images/logos/logo.png"/>
-                <p>
-                  <span class="text-logo">theCucumber.app</span>
-                </p>
-                <h1 class="text-apple text-intro">
-                  We provide a sophisticated analytics platform to help you improve your conversions and rocket grow your business.
+                <h1 class="text-apple text-intro">Digital eye strain impacts 90% of employees<sup>*</sup>. It's overlooked in the modern workplace. It costs productivity and employee satisfaction.
                 </h1>
                 <hr>
                 <p>
                   <a class="button zoomIn radius text-apple"
                       href="https://thecucumber.app/cucumber-app-latest.zip"
-                      title="Download The cucumber app for free">
+                      title="Download theCucumber.app for free"
+                      id="btnDownload-1">
                     Download now
                   </a>
                 </p>
@@ -125,26 +167,112 @@
             </div>
           </div>
         </section>
+        <!-- slides=01 -->
+        <section class="fullscreen bg-gradient-white">
+          <div class="card-50">
+            <figure>
+              <img src="./static/images/take-a-break.jpg" alt="Take a break">
+            </figure>
+            <div class="flex-content">
+              <div class="wrap">
+                <h1 class="text-apple">The Problem</h1>
+                <hr>
+                <p>
+                When you are using your computer <strong>6&ndash;12 hours per day, 5½ days per week</strong>, your eye muscles get strained focussing on short distances. Couple that with reduced blink rates of up to <strong>68&ndash;80%<sup>*</sup></strong> and you can see why your eyes suffer.
+                </p>
+                <p>
+                The unnatural sedentary position puts enormous stress on your lower-back and neck. Overtime, as you age, chronic back pain could emerge. 
+                </p>
+                <p>
+                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6465323/
+              </div>
+            </div>
+          </div>
+        </section>
         <!-- slides=02 -->
-        <section class="bg-gradient-v">
+        <section class="fullscreen bg-gradient-white">
+          <div class="card-50">
+            <div class="flex-content">
+              <div class="wrap">
+                <h1 class="text-apple">What does the app do?</h1>
+                <hr>
+                <p>
+                <strong>theCucumber.app</strong> is a simple yet powerful break scheduler designed for individuals but optimized for teams. The entire team can embrace a culture of taking regular short breaks &mdash; synchronized for the entire team.
+                </p>
+                <p>
+                The app covers the entire screen at fully customizable intervals set by the manager. Within a month your workers should notice reduced eye strain, better back and neck health, and in some industries, improved concentration and creativity.
+                </p>
+              </div>
+            </div>
+            <figure>
+              <img src="./static/images/take-a-break.jpg" alt="Take a break">
+            </figure>
+          </div>
+        </section>
+        <!-- slides=03 -->
+        <section class="fullscreen bg-gradient-white">
+          <div class="card-50">
+            <figure>
+              <img src="./static/images/take-a-break.jpg" alt="Take a break">
+            </figure>
+            <div class="flex-content">
+              <div class="wrap">
+                <h1 class="text-apple">How does it work?</h1>
+                <hr>
+                <p>
+                Your manager can set predefined scheduled breaks for your entire team. No matter what your timezone is or how behind your system time is, the breaks are scheduled in unison to generate team cohesion.
+                </p>
+                <p>
+                Optometrists advocate the <strong>20&ndash;20&ndash;20 rule</strong>. This means every <strong>20 minutes</strong>, take a <strong>20 second</strong> break by looking at something <strong>6m</strong> <sup>( 20ft )</sup> away. This will help your eye muscles relax from the stress and strain of looking at a screen.
+                </p>
+                <p>
+                Another idea is to provide a short stretch/walk break every hour to help mitigate the effects of sitting in a sedentary position.
+                </p>
+                <p>
+                All schedules are extensively customizable so they can be set set only operate during your office hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- slides=04 -->
+        <section class="bg-gradient-white">
           <div class="wrap">
-            <h2>Why the cucumber app?</h2>
+            <h2>Features</h2>
             <ul class="flexblock gallery">
               <li>
                 <figure>
-                  <img alt="Thumbnail" src="./static/images/increase-workers-productivity.jpg">
+                  <img alt="Thumbnail" src="./static/images/animated-screenshot.png">
                   <figcaption>
-                    <h2>Eye and back Health</h2>
-                    <p>Add paragraph related to Health</p>
+                    <h2><strong>Robust Screen Blocking</strong></h2>
+                    <p>When you're working hard, it's tough to take a break. Robust screen blocking covers your workspace to force you to take your scheduled breaks until it becomes habitual. The productivity gains will come in the long-run.</p>
                   </figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
-                  <img alt="Thumbnail " src="./static/images/increase-workers-productivity.jpg">
+                  <img alt="Thumbnail " src="./static/images/eye-closed-zoom.jpg">
                   <figcaption>
-                    <h2>Happy workers</h2>
-                    <p>Add paragraph related to Happy Workers</p>
+                    <h2><strong>Blink Alarm</strong></h2>
+                    <p>Your blink rate reduces by <strong>68&ndash;80%</strong> when you're in front of a screen. The increased dryness contributes to digital eye strain. You can set an alarm to remind you to blink at your natural frequency.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img alt="Thumbnail" src="./static/images/work-remote.jpg">
+                  <figcaption>
+                    <h2><strong>Offline Enabled</strong></h2>
+                    <p>Eye strain can strike when you're not online. You could be working in an airplane or remotely in the middle of the Australian Outback. The scheduled breaks will continue to protect you.</p>
+                  </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img alt="Thumbnail" src="./static/images/presentation-15pc.jpg">
+                  <figcaption>
+                    <h2><strong>Presentation Pauses</strong></h2>
+                    <p>Sometimes you're in a video conference. Other times you've got an important presentation. You can pause the app up to the daily limit so it doesn't interfere with immediate priorities.</p>
                   </figcaption>
                 </figure>
               </li>
@@ -152,29 +280,63 @@
                 <figure>
                   <img alt="Thumbnail" src="./static/images/increase-workers-productivity.jpg">
                   <figcaption>
-                    <h2>Productivity</h2>
-                    <p>Add paragraph related to Productivity</p>
+                    <h2><strong>Urgent Tasks</strong></h2>
+                    <p>The Screen Block is there to help you. On the rare occasion when you have an urgent task, you can skip the scheduled break &mdash; but only up to a daily limit.</p>
                   </figcaption>
                 </figure>
               </li>
               <li>
                 <figure>
-                  <img alt="Thumbnail" src="./static/images/increase-workers-productivity.jpg">
+                  <img alt="Thumbnail" src="./static/images/cron-inv.jpg">
                   <figcaption>
-                    <h2>Creativity</h2>
-                    <p>Add paragraph related to Creativity</p>
+                    <h2><strong>Sophisticated Scheduling</strong></h2>
+                    <p>Managers can create fine-grained break schedules such as only during office hours. More advanced users can use <u><a href="https://en.wikipedia.org/wiki/Cron" target="_blank">CRON syntax</a></u> to create breaks such as on a particular day of the week or range of months.</p>
                   </figcaption>
+                </figure>
+              </li>
+              <li>
+                <figure>
+                  <img id="team-unity-anim" alt="Thumbnail" src="./static/images/enterprise_1.png">
+                  <img id="team-unity-anim-hide1" style="display:none" height="1px" width= "1px" src="./static/images/enterprise_2.png">
+                  <img id="team-unity-anim-hide2" style="display:none" height="1px" width= "1px" src="./static/images/enterprise_3.png">
+                  <figcaption>
+                    <h2><strong>Team Unity</strong></h2>
+                    <p>Enterprise customers can set their team or company logo as the design.</p>
+                  </figcaption>
+                  <script>
+                    setInterval(function(){ 
+                        var img = document.getElementById("team-unity-anim");
+                        var imgt1 = document.getElementById("team-unity-anim-hide1");
+                        var imgt2 = document.getElementById("team-unity-anim-hide2");
+
+                        if (!(img.complete && imgt1.complete && imgt2.complete)) {return}
+
+                        var orig = img.src
+                        var fname = img.src.split('/').pop();
+                        switch(fname) {
+                          case 'enterprise_1.png':
+                            img.src = orig.replace('enterprise_1.png', 'enterprise_2.png');
+                            break;
+                          case 'enterprise_2.png':
+                            img.src = orig.replace('enterprise_2.png', 'enterprise_3.png');
+                            break;
+                          default:
+                            img.src = orig.replace('enterprise_3.png', 'enterprise_1.png');
+                            break;
+                        }
+                    }, 1000);
+                  </script>
                 </figure>
               </li>
             </ul>
           </div>
         </section>
-        <!-- slides=03 -->
+        <!-- slides=05 -->
         <section id="research">
           <div class="wrap">
-            <h2 class="aligncenter text-apple">Research</h2>
+            <h2 class="aligncenter text-apple">Read the Research</h2>
 
-            <h3 class="accordion text-subtitle">Impact of dry eye on work productivity (2012) by Yamada, M, Et al.</h3>
+            <h3 class="accordion text-subtitle"><strong>Impact of dry eye on work productivity</strong> (2012) by Yamada, M, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -233,7 +395,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Impact+of+dry+eye+on+work+productivity+Yamada+2012+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle">Effectiveness of a participatory eye care program in reducing eye strain (2017) by Sudaw Lertwisuttipaiboon, Et al.</h3>
+            <h3 class="accordion text-subtitle"><strong>Effectiveness of a participatory eye care program in reducing eye strain</strong> (2017) by Sudaw Lertwisuttipaiboon, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -285,7 +447,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Effectiveness+of+a+participatory+eye+care+program+in+reducing+eye+strain+among+staff+computer+users+in+Thailand+2017+Sudaw+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle">Impact of Dry Eye Disease on Work Productivity, and Patients’ Satisfaction with Over-the-Counter Dry Eye Treatments (2016) by Nichols, K, Et al.</h3>
+            <h3 class="accordion text-subtitle"><strong>Impact of Dry Eye Disease on Work Productivity, and Patients’ Satisfaction with Over-the-Counter Dry Eye Treatments</strong> (2016) by Nichols, K, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -342,7 +504,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Impact+of+Dry+Eye+Disease+on+Work+Productivity%2C+and+Patients%E2%80%99+Satisfaction+with+Over-the-Counter+Dry+Eye+Treatments+2016+Nichols+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle">Digital eye strain: prevalence, measurement and amelioration (2018) by Sheppard, A, Et al.</h3>
+            <h3 class="accordion text-subtitle"><strong>Digital eye strain: prevalence, measurement and amelioration</strong> (2018) by Sheppard, A, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -379,7 +541,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Digital+eye+strain%3A+prevalence%2C+measurement+and+amelioration+%282018%29+Sheppard+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle">Ocular Ergonomics for the Computer Vision Syndrome (2018) by Turgut, B</h3>
+            <h3 class="accordion text-subtitle"><strong>Ocular Ergonomics for the Computer Vision Syndrome</strong> (2018) by Turgut, B</h3>
             <div class="panel">
               <h4 class="text-subtitle">
                 <strong>Introduction</strong>
@@ -408,73 +570,72 @@
             </div>
           </div>
         </section>
-        <!-- slides=04 -->
+        <!-- slides=06 -->
         <section class="bg-white" id="plans">
           <div class="wrap">
-            <h2 class="aligncenter text-apple">Choose one plan</h2>
-            <p class="aligncenter text-apple">Personal plans</p>
+            <h2 class="aligncenter text-apple">Personal plans</h2>
             <ul class="flexblock plans">
               <li>
                 <h2 class="personal">Personal</h2>
                 <div>
                   <ul>
-                    <li>1 schedule</li>
-                    <li>Screen blocking</li>
-                    <li>No skips</li>
-                    <li>5 mins daily pause limit</li>
-                    <li>Increase productivity</li>
-                    <li>Improve eye health</li>
+                    <li><span class="code-comment"><strong>1</strong></span> Schedule</li>
+                    <li><span class="code-comment"><strong>Robust</strong></span> Screen Blocking</li>
+                    <li><span class="code-comment"><strong>No</strong></span> Skips</li>
+                    <li><span class="code-comment"><strong>5 mins</strong></span> Presentation Pause (daily limit)</li>
+                    <li><span class="code-comment"><strong>Increase</strong></span> Productivity</li>
+                    <li><span class="code-comment"><strong>Improve</strong></span> Eye health</li>
                   </ul>
-                  <span class="price">Free</span>
+                  <span class="price"><strong>Free</strong> <br><sup>(forever)</sup></span>
                 </div>
               </li>
               <li>
                 <h2 class="professional">Professional</h2>
                 <div>
                   <ul>
-                    <li>Unlimited schedules</li>
-                    <li>Blink reminders</li>
-                    <li>More skips</li>
-                    <li>Offline enabled</li>
-                    <li>Higher daily pause limits</li>
-                    <li>Complex schedules</li>
+                    <li><span class="code-comment"><strong>Unlimited</strong></span> Schedules</li>
+                    <li><span class="code-comment"><strong>Blink</strong></span> Alarm</li>
+                    <li><span class="code-comment"><strong>More</strong></span> Skips</li>
+                    <li><span class="code-comment"><strong>Longer</strong></span> Presentation Pause (daily limit)</li>
+                    <li><span class="code-comment"><strong>Offline</strong></span> Enabled</li>
+                    <li><span class="code-comment"><strong>Sophisticated</strong></span> Scheduling</li>
                   </ul>
-                  <span class="price"><sup>$</sup>3,99 <sup>/month</sup></span>
+                  <span class="price"><sup>$</sup>1.99 <sup>/month</sup><br><sup>(usd)</sup></span>
                 </div>
               </li>
             </ul>
-            <p class="aligncenter text-apple">Team plans</p>
+            <h2 class="aligncenter text-apple">Team plans</h2>
             <ul class="flexblock plans">
               <li>
                 <h2 class="small">Small</h2>
                 <div>
                   <ul>
-                    <li>Up to 5 members</li>
-                    <li>Synchronized schedules</li>
-                    <li>Everything from Professional</li>
+                    <li><span class="code-comment"><strong>5+</strong></span> Members</li>
+                    <li><span class="code-comment"><strong>Synchronized</strong></span> Schedules</li>
+                    <li><span class="code-comment"><strong>Everything</strong></span> from Pro</li>
                   </ul>
-                  <span class="price"><sup>$</sup>3,99 <sup>per worker/month</sup></span>
+                  <span class="price"><sup>$</sup>1.99 <sup>/per worker/month</sup><br><sup>(usd)</sup></span>
                 </div>
               </li>
               <li>
                 <h2 class="medium">Medium</h2>
                 <div>
                   <ul>
-                    <li>Up to 100 members</li>
-                    <li>Synchronized schedules</li>
-                    <li>Everything from Professional</li>
+                    <li><span class="code-comment"><strong>100+</strong></span> Members</li>
+                    <li><span class="code-comment"><strong>Synchronized</strong></span> Schedules</li>
+                    <li><span class="code-comment"><strong>Everything</strong></span> from Pro</li>
                   </ul>
-                  <span class="price"><sup>$</sup>2,99 <sup>per worker/month</sup></span>
+                  <span class="price"><sup>$</sup>1.50 <sup>/per worker/month</sup><br><sup>(usd)</sup></span>
                 </div>
               </li>
               <li>
                 <h2 class="enterprise">Enterprise</h2>
                 <div>
                   <ul>
-                    <li>Unlimited members</li>
-                    <li>Blink reminders</li>
-                    <li>Custom break screen</li>
-                    <li>Everything from Professional</li>
+                    <li><span class="code-comment"><strong>Unlimited</strong></span> Members</li>
+                    <li><span class="code-comment"><strong>Synchronized</strong></span> Schedules</li>
+                    <li><span class="code-comment"><strong>Team Unity</strong></span> Design</li>
+                    <li><span class="code-comment"><strong>Everything</strong></span> from Pro</li>
                   </ul>
                   <span class="price">Contact us</span>
                 </div>
@@ -482,11 +643,11 @@
             </ul>
           </div>
         </section>
-        <!-- slides=05 -->
+        <!-- slides=07 -->
         <section class="bg-gradient-v fullscreen">
           <div class="card-50">
             <figure>
-              <img src="./static/images/ready-to-start.jpg" alt="The cucumber app">
+              <img src="./static/images/ready-to-start.jpg" alt="">
             </figure>
             <div class="flex-content">
               <div class="wrap aligncenter">
@@ -510,12 +671,66 @@
       <div class="wrap aligncenter">
         <p>Crafted with 
         <i class="with-love"></i> by 
-        <span class="text-apple text-company">rocketlaunchr.cloud Pty Ltd</span>
+        <a target="_blank" href="https://abr.business.gov.au/ABN/View?abn=13149461861"><span class="text-apple text-company">rocketlaunchr.cloud </span></a><small><small>© 2020 ABN 13 149 461 861</small></small>
         </p>
       </div>
     </footer>
 
     <script>
+        /* show pitch at the start */
+        let fs = document.getElementById('dimScreen');
+        let styl = fs.style;
+        function openPitch() {
+            // Hide scrollbars
+            document.body.style.overflow = 'hidden'
+            styl.removeProperty('display')
+            fs.focus()
+        }
+
+        function closePitch() {
+            // Show scrollbars
+            document.body.style.overflow = ''
+            styl.display = 'none'
+        }
+
+        function togglePitch() {
+            let fs = document.getElementById('dimScreen')
+            let styl = fs.style
+            if (styl.display === 'none') {
+                // Currently hidden so now show features page
+
+                // Hide scrollbars
+                document.body.style.overflow = 'hidden'
+                styl.removeProperty('display')
+                fs.focus()
+            } else {
+                // Show scrollbars
+                document.body.style.overflow = ''
+                styl.display = 'none'
+            }
+        }
+
+        window.onload = function() { 
+            var previous = document.referrer;
+            previous = previous.slice(previous.length - 11)
+            if (previous !== '/pitch.html') {
+                if (window.location.protocol !== "file:") {
+                    openPitch()
+                } 
+            }
+        }
+
+
+      function isMac() {return navigator.platform.indexOf('Mac') > -1}
+      function isWin() {return navigator.platform.indexOf('Win') > -1}
+      // if (isMac()) {
+      //   document.getElementById("btnDownload-1").innerHTML= "Download for <img src='./static/images/macos_16.png' />now"
+      // } else if (isWin()) {
+      //   document.getElementById("btnDownload-1").innerHTML= "<img src='./static/images/win_16.png' /> Download now"
+      // }
+      
+      
+
       /* scroll to section */
       function scrollToSection(id) {
         var section = document.querySelectorAll('section')[id];
