@@ -1351,7 +1351,7 @@ header.header-nav:hover {
 
 /*=== 3.1. Logo === */
 .logo a {
-  background: url("../images/logos/logo.png") no-repeat 0 0;
+  background: url("../images/logo.png") no-repeat 0 0;
   background-size: 4.8rem;
   float: left;
   height: 4.8rem;
