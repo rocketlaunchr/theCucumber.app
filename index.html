@@ -171,20 +171,23 @@
         <section class="fullscreen bg-gradient-white">
           <div class="card-50">
             <figure>
-              <img src="./static/images/take-a-break.jpg" alt="Take a break">
+              <img src="./static/images/neck-pain.jpg" alt="">
             </figure>
             <div class="flex-content">
               <div class="wrap">
                 <h1 class="text-apple">The Problem</h1>
+                <p class="text-intro">(It's actually an epidemic!)</p>
                 <hr>
                 <p>
-                When you are using your computer <strong>6&ndash;12 hours per day, 5½ days per week</strong>, your eye muscles get strained focussing on short distances. Couple that with reduced blink rates of up to <strong>68&ndash;80%<sup>*</sup></strong> and you can see why your eyes suffer.
+                When you are using your computer <strong>6&ndash;12 hours per day, 5½ days per week</strong>, your eye muscles get strained due to focussing on short distances. Couple that with reduced blink rates of up to <strong>68&ndash;80%<sup>*</sup></strong> and you can see why your eyes suffer.
                 </p>
                 <p>
-                The unnatural sedentary position puts enormous stress on your lower-back and neck. Overtime, as you age, chronic back pain could emerge. 
+                The unnatural sedentary position puts enormous stress on your <strong>lower back and neck</strong>. Over time, as you age, <strong>chronic back pain</strong> could emerge. 
                 </p>
                 <p>
-                    https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6465323/
+                Studies have shown that most employees don't skip work when they have eye strain. Instead, they operate at reduced productivity levels. In 2011, the loss was estimated at <strong>$799<sup>*</sup> USD per employee</strong> in Japan.
+                </p>
+<!--                 <p><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6465323/" target="_blank">See The Relationship Between Sedentary Behavior, Back Pain, and Psychosocial Correlates Among University Employees</a></cite></p> -->
               </div>
             </div>
           </div>
@@ -194,33 +197,57 @@
           <div class="card-50">
             <div class="flex-content">
               <div class="wrap">
-                <h1 class="text-apple">What does the app do?</h1>
+                <h1 class="text-apple">The Solution</h1>
+                <p class="text-intro">What does the app do?</p>
                 <hr>
                 <p>
-                <strong>theCucumber.app</strong> is a simple yet powerful break scheduler designed for individuals but optimized for teams. The entire team can embrace a culture of taking regular short breaks &mdash; synchronized for the entire team.
+                The <u><strong>only solution</strong></u> to digital eye strain and back pain is to take regular <strong>short</strong> breaks. The problem is when you're working hard, it's tough to take a break. 
                 </p>
                 <p>
-                The app covers the entire screen at fully customizable intervals set by the manager. Within a month your workers should notice reduced eye strain, better back and neck health, and in some industries, improved concentration and creativity.
+                <strong>theCucumber.app</strong> is a simple yet powerful break scheduler <strong>designed</strong> and <i><strong>optimized</strong></i> for teams <sup>(& individuals)</sup>. It covers your entire workspace so the whole team takes their break synchronized. This fosters team unity and eventually becomes engrained in the team culture.
+                </p>
+                <p>
+                 It's available for <strong>macOS</strong> and <strong>Windows 10</strong>. Within a month<sup>*</sup>, your team should notice <strong>reduced eye strain</strong>, <strong>better back and neck health</strong>, and in some fields, <strong>improved concentration and creativity</strong>.
                 </p>
               </div>
             </div>
             <figure>
-              <img src="./static/images/take-a-break.jpg" alt="Take a break">
+              <img id="img-solution" src="./static/images/take-a-break.jpg" alt="Take a break">
+              <!-- <img id="img-solution-hide"  style="display:none" height="1px" width= "1px" src="./static/images/happy-employee.jpg"> -->
             </figure>
           </div>
+         <!--  <script>
+            setInterval(function(){ 
+                var img = document.getElementById("img-solution");
+                var imgt1 = document.getElementById("img-solution-hide");
+
+                if (!(img.complete && imgt1.complete)) {return}
+
+                var orig = img.src
+                var fname = img.src.split('/').pop();
+                switch(fname) {
+                  case 'take-a-break.jpg':
+                    img.src = orig.replace('take-a-break.jpg', 'happy-employee.jpg');
+                    break;
+                  default:
+                    img.src = orig.replace('happy-employee.jpg', 'take-a-break.jpg');
+                    break;
+                }
+            }, 3000);
+          </script> -->
         </section>
         <!-- slides=03 -->
         <section class="fullscreen bg-gradient-white">
           <div class="card-50">
             <figure>
-              <img src="./static/images/take-a-break.jpg" alt="Take a break">
+              <img src="./static/images/start-your-exercise.jpg" alt="Start your exercise">
             </figure>
             <div class="flex-content">
               <div class="wrap">
                 <h1 class="text-apple">How does it work?</h1>
                 <hr>
                 <p>
-                Your manager can set predefined scheduled breaks for your entire team. No matter what your timezone is or how behind your system time is, the breaks are scheduled in unison to generate team cohesion.
+                Managers can set predefined scheduled breaks for the entire team. No matter what your timezone is or how behind your system time is, the breaks are scheduled in unison to generate team cohesion.
                 </p>
                 <p>
                 Optometrists advocate the <strong>20&ndash;20&ndash;20 rule</strong>. This means every <strong>20 minutes</strong>, take a <strong>20 second</strong> break by looking at something <strong>6m</strong> <sup>( 20ft )</sup> away. This will help your eye muscles relax from the stress and strain of looking at a screen.
@@ -303,33 +330,33 @@
                     <h2><strong>Team Unity</strong></h2>
                     <p>Enterprise customers can set their team or company logo as the design.</p>
                   </figcaption>
-                  <script>
-                    setInterval(function(){ 
-                        var img = document.getElementById("team-unity-anim");
-                        var imgt1 = document.getElementById("team-unity-anim-hide1");
-                        var imgt2 = document.getElementById("team-unity-anim-hide2");
-
-                        if (!(img.complete && imgt1.complete && imgt2.complete)) {return}
-
-                        var orig = img.src
-                        var fname = img.src.split('/').pop();
-                        switch(fname) {
-                          case 'enterprise_1.png':
-                            img.src = orig.replace('enterprise_1.png', 'enterprise_2.png');
-                            break;
-                          case 'enterprise_2.png':
-                            img.src = orig.replace('enterprise_2.png', 'enterprise_3.png');
-                            break;
-                          default:
-                            img.src = orig.replace('enterprise_3.png', 'enterprise_1.png');
-                            break;
-                        }
-                    }, 1000);
-                  </script>
                 </figure>
               </li>
             </ul>
           </div>
+          <script>
+            setInterval(function(){ 
+                var img = document.getElementById("team-unity-anim");
+                var imgt1 = document.getElementById("team-unity-anim-hide1");
+                var imgt2 = document.getElementById("team-unity-anim-hide2");
+
+                if (!(img.complete && imgt1.complete && imgt2.complete)) {return}
+
+                var orig = img.src
+                var fname = img.src.split('/').pop();
+                switch(fname) {
+                  case 'enterprise_1.png':
+                    img.src = orig.replace('enterprise_1.png', 'enterprise_2.png');
+                    break;
+                  case 'enterprise_2.png':
+                    img.src = orig.replace('enterprise_2.png', 'enterprise_3.png');
+                    break;
+                  default:
+                    img.src = orig.replace('enterprise_3.png', 'enterprise_1.png');
+                    break;
+                }
+            }, 1000);
+          </script>
         </section>
         <!-- slides=05 -->
         <section id="research">
@@ -647,7 +674,7 @@
         <section class="bg-gradient-v fullscreen">
           <div class="card-50">
             <figure>
-              <img src="./static/images/ready-to-start.jpg" alt="">
+              <img src="./static/images/happy-work-team.jpg" alt="">
             </figure>
             <div class="flex-content">
               <div class="wrap aligncenter">
