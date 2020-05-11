@@ -252,7 +252,7 @@
           if (window.frameElement) {
             // We are inside an iframe
             var to = setTimeout(function(){
-              parent.closeFeatures();
+              parent.closePitch();
               clearTimeout(to)
             }, 2500);
           }
