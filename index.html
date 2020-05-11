@@ -18,7 +18,8 @@
     <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
 
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
-    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    <!-- <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css"> -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous"> -->
 
     <!-- SOCIAL CARDS (ADD YOUR INFO) -->
 
@@ -91,11 +92,6 @@
         </p>
         <ul class="text-apple">
           <li>
-            <a class="btn-login" href="https://github.com/rocketlaunchr/theCucumber.app/releases" target="_blank" title="Download">
-              <strong> Download</strong>
-            </a>
-          </li>
-          <li>
             <a class="btn-login" href="https://thecucumber.app/login" title="Login">
               <strong> Login</strong>
             </a>
@@ -134,7 +130,7 @@
                     <a href="https://github.com/rocketlaunchr/theCucumber.app/releases" target="_blank" >Download</a>
                   </li>
                   <li>
-                    <a onclick="scrollToSection(3)">Contact Us</a>
+                    <a onclick="scrollToSection(7)">Contact Us</a>
                   </li>
                 </ul>
               </li>
@@ -152,7 +148,7 @@
           <div class="wrap">
             <div class="alignright size-40 bg-trans-dark">
               <div class="wrap aligncenter">
-                <h1 class="text-apple text-intro">Digital eye strain impacts 90% of employees<sup>*</sup>. It's overlooked in the modern workplace. It costs productivity and employee satisfaction.
+                <h1 class="text-apple text-intro">Digital eye strain impacts 90% of employees<sup>*</sup>. It's overlooked in the modern workplace. It costs productivity and employee happiness. 
                 </h1>
                 <hr>
                 <p>
@@ -247,16 +243,16 @@
                 <h1 class="text-apple">How does it work?</h1>
                 <hr>
                 <p>
-                Managers can set predefined scheduled breaks for the entire team. No matter what your timezone is or how behind your system time is, the breaks are scheduled in unison to generate team cohesion.
+                Managers set scheduled breaks for the entire team. No matter the timezone or how lagging the system time is, the breaks are scheduled in unison to generate team cohesion.
                 </p>
                 <p>
-                Optometrists advocate the <strong>20&ndash;20&ndash;20 rule</strong>. This means every <strong>20 minutes</strong>, take a <strong>20 second</strong> break by looking at something <strong>6m</strong> <sup>( 20ft )</sup> away. This will help your eye muscles relax from the stress and strain of looking at a screen.
+                Optometrists advocate the <strong>20&ndash;20&ndash;20 rule</strong>. This means every <strong>20 minutes</strong>, take a <strong>20&ndash;second</strong> break by looking at something <strong>6m</strong> <sup>( 20ft )</sup> away. This will help relax your eye muscles from the stress and strain of looking at a closeup screen.
                 </p>
                 <p>
-                Another idea is to provide a short stretch/walk break every hour to help mitigate the effects of sitting in a sedentary position.
+                To counter the effects of a sedentary lifestyle, stretch and walking short breaks every hour is recommended.
                 </p>
                 <p>
-                All schedules are extensively customizable so they can be set set only operate during your office hours.
+                All schedules are extensively customizable so they can operate during office hours.
                 </p>
               </div>
             </div>
@@ -678,15 +674,23 @@
             </figure>
             <div class="flex-content">
               <div class="wrap aligncenter">
-                <h1 class="text-apple">Ready to start?</h1>
+                <h2>Your team will thank you!</h2>
                 <hr>
-                <p>
-                  <a class="button zoomIn radius text-apple"
-                      href="https://thecucumber.app/cucumber-app-latest.zip"
-                      title="Download The cucumber app for free">
-                    Download now
-                  </a>
-                </p>
+                <div class="wrap size-75">
+                  <form action="/" method="post">
+                    <fieldset>
+                      <legend>Contact Us</legend>
+                      <p><label>Name</label>
+                        <input type="text" tabindex="1" name="email" placeholder="" required>
+                        <label>Email</label>
+                        <input type="email" tabindex="2" name="email" placeholder="" required>
+                        <label>Question</label>
+                        <textarea name="question" tabindex="3" cols="40" rows="1" required></textarea>
+                        <button type="submit" tabindex="4" title="Login">Submit</button>
+                      </p>
+                    </fieldset>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -750,13 +754,6 @@
 
       function isMac() {return navigator.platform.indexOf('Mac') > -1}
       function isWin() {return navigator.platform.indexOf('Win') > -1}
-      // if (isMac()) {
-      //   document.getElementById("btnDownload-1").innerHTML= "Download for <img src='./static/images/macos_16.png' />now"
-      // } else if (isWin()) {
-      //   document.getElementById("btnDownload-1").innerHTML= "<img src='./static/images/win_16.png' /> Download now"
-      // }
-      
-      
 
       /* scroll to section */
       function scrollToSection(id) {
