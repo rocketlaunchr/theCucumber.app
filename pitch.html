@@ -226,7 +226,7 @@
         }
         nextSlideTimer = setTimeout(function(){
           window.ws.goNext()
-        }, 4000);
+        }, 6500);
       });
 
       window.ws = new WebSlides({
@@ -246,7 +246,7 @@
         }
         nextSlideTimer = setTimeout(function(){
           window.ws.goNext()
-        }, 3500);
+        }, 6500);
 
         if (Object.keys(slidesShown).length >= noOfSlides - 1) {
           if (window.frameElement) {
@@ -254,7 +254,7 @@
             var to = setTimeout(function(){
               parent.closePitch();
               clearTimeout(to)
-            }, 2500);
+            }, 6500);
           }
         }
       });
