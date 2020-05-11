@@ -83,6 +83,11 @@
               <strong>Register</strong>
             </a>
           </li>
+          <li id="btn-close-pitch" style="display: none">
+            <a onclick="parent.closePitch()" style="cursor:pointer;">
+              <strong>&#x274C;</strong>
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -274,6 +279,12 @@
         //     header.style.opacity = 0;
         //   }
         }, 2500);
+      }
+
+      // Reveal red cross if page is in a iframe
+      if (window.frameElement) { 
+        let x = document.getElementById('btn-close-pitch');
+        x.style.removeProperty('display')
       }
 
 
