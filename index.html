@@ -355,9 +355,9 @@
           </script>
         </section>
         <!-- slides=05 -->
-        <section id="research">
+        <section>
           <div class="wrap">
-            <h2 class="aligncenter text-apple">Read the Research</h2>
+            <h2 id="research" class="aligncenter text-apple">Read the Research</h2>
 
             <h3 class="accordion text-subtitle"><strong>Impact of dry eye on work productivity</strong> (2012) by Yamada, M, Et al.</h3>
             <div class="panel">
@@ -757,7 +757,12 @@
 
       /* scroll to section */
       function scrollToSection(id) {
-        var section = document.querySelectorAll('section')[id];
+        var section
+        if (typeof id === 'string') {
+          section = document.getElementById(id);
+        } else {
+          section = document.querySelectorAll('section')[id];
+        }
         section.scrollIntoView({behavior: "smooth"});
       }
 
