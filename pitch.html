@@ -335,6 +335,7 @@
     <script src="static/js/webslides.js"></script>
     <script>
 
+      var slide = false;
       var nextSlideTimer;
       var slidesShown = {}
 
@@ -343,9 +344,11 @@
         if (nextSlideTimer !== undefined) {
           clearTimeout(nextSlideTimer)
         }
-        nextSlideTimer = setTimeout(function(){
-          window.ws.goNext()
-        }, 6500);
+        if (slide) {
+          nextSlideTimer = setTimeout(function(){
+            window.ws.goNext()
+          }, 6500);
+        }
       });
 
       window.ws = new WebSlides({
@@ -363,9 +366,11 @@
         if (nextSlideTimer !== undefined) {
           clearTimeout(nextSlideTimer)
         }
-        nextSlideTimer = setTimeout(function(){
-          window.ws.goNext()
-        }, 6500);
+        if (slide) {
+          nextSlideTimer = setTimeout(function(){
+            window.ws.goNext()
+          }, 6500);
+        }
 
         if (Object.keys(slidesShown).length >= noOfSlides - 1) {
           if (window.frameElement) {
