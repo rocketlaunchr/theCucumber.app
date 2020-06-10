@@ -112,10 +112,10 @@
                     <a href="./pitch.html#slide=1">Pitch</a>
                   </li>
                   <li>
-                    <a onclick="scrollToSection(4)">Features</a>
+                    <a onclick="scrollToSection('features_jump')">Features</a>
                   </li>
                   <li>
-                    <a onclick="scrollToSection(5)">Read Research</a>
+                    <a onclick="scrollToSection('research')">Read Research</a> <!-- Used by app -->
                   </li>
 <!--                   <li>
                     <a onclick="scrollToSection(2)">Testimonials</a>
@@ -124,10 +124,10 @@
                     <a onclick="scrollToSection(2)">Case Studies</a>
                   </li> -->
                   <li>
-                    <a onclick="scrollToSection(6)">Plans</a>
+                    <a onclick="scrollToSection('plans_jump')">Plans</a>
                   </li>
                   <li>
-                    <a href="https://github.com/rocketlaunchr/theCucumber.app/releases" target="_blank" >Download</a>
+                    <a href="https://github.com/rocketlaunchr/theCucumber.app/releases" target="_blank">Download</a>
                   </li>
                   <li>
                     <a onclick="scrollToSection(7)">Contact Us</a>
@@ -148,7 +148,7 @@
           <div class="wrap">
             <div class="alignright size-40 bg-trans-dark fadeInUp slow">
               <div class="wrap aligncenter">
-                <h1 class="text-apple text-intro">Digital eye strain impacts 71%<sup>*</sup> of employees. It's overlooked in the modern workplace. It costs productivity and employee happiness. 
+                <h1 class="text-apple text-intro">Digital eye strain impacts 71% of employees. It's overlooked in the modern workplace. It costs productivity and employee happiness. 
                 </h1>
                 <hr>
                 <p>
@@ -175,13 +175,13 @@
                 <p class="text-intro">(It's actually an epidemic!)</p>
                 <hr>
                 <p>
-                When you are using your computer <strong>6&ndash;12 hours per day, 5½ days per week</strong>, your eye muscles get strained due to focussing on short distances. Couple that with reduced blink rates of up to <strong>68&ndash;80%<sup>*</sup></strong> and you can see why your eyes suffer.
+                When you are using your computer <strong>6&ndash;12 hours per day, 5½ days per week</strong>, your eye muscles get strained due to focussing on short distances. Couple that with a powerful backlight beaming at your eyes, and reduced blink rates of up to <strong>68&ndash;80%</strong>, and you can see why your eyes suffer.
                 </p>
                 <p>
                 The unnatural sedentary position puts enormous stress on your <strong>lower back and neck</strong>. Over time, as you age, <strong>chronic back pain</strong> could emerge. 
                 </p>
                 <p>
-                Studies have shown that most employees don't skip work when they have eye strain. Instead, they operate at reduced productivity levels. In 2011, the loss was estimated at <strong>$799<sup>*</sup> USD per employee</strong> in Japan.
+                Studies have shown that most employees don't skip work when they have eye strain. Instead, they operate at reduced productivity levels. In 2011, the loss was estimated at <strong>$799 USD per employee</strong> in Japan.
                 </p>
 <!--                 <p><cite><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6465323/" target="_blank">See The Relationship Between Sedentary Behavior, Back Pain, and Psychosocial Correlates Among University Employees</a></cite></p> -->
               </div>
@@ -200,37 +200,17 @@
                 The <u><strong>only solution</strong></u> to digital eye strain and back pain is to take regular <strong>short</strong> breaks. The problem is when you're working hard, it's tough to take a break. 
                 </p>
                 <p>
-                <strong>theCucumber.app</strong> is a simple yet powerful break scheduler <strong>designed</strong> for teams <sup>(& individuals)</sup>. It covers your entire screen so the whole team takes their break synchronized. This fosters team unity and eventually becomes engrained in the team culture.
+                <strong>theCucumber.app</strong> covers your entire screen. It is a simple yet powerful break scheduler <strong>designed</strong> for teams <sup>(& individuals)</sup>, so the whole team takes their break synchronized. This fosters team unity and eventually becomes engrained in the team culture.
                 </p>
                 <p>
-                 It's available for <strong>macOS</strong> and <strong>Windows 10</strong>. Within a month<sup>*</sup>, your team should notice <strong>reduced eye strain</strong>, <strong>better back and neck health</strong>, and in some fields, <strong>improved concentration and creativity</strong>.
+                 It's available for <strong>macOS</strong> and <strong>Windows 10</strong>. Within a month, your team should notice <strong>reduced eye strain</strong>, <strong>better back and neck health</strong>, and in some fields, <strong>improved concentration and creativity</strong>.
                 </p>
               </div>
             </div>
             <figure>
               <img id="img-solution" src="./static/images/take-a-break.jpg" alt="Take a break">
-              <!-- <img id="img-solution-hide"  style="display:none" height="1px" width= "1px" src="./static/images/happy-employee.jpg"> -->
             </figure>
           </div>
-         <!--  <script>
-            setInterval(function(){ 
-                var img = document.getElementById("img-solution");
-                var imgt1 = document.getElementById("img-solution-hide");
-
-                if (!(img.complete && imgt1.complete)) {return}
-
-                var orig = img.src
-                var fname = img.src.split('/').pop();
-                switch(fname) {
-                  case 'take-a-break.jpg':
-                    img.src = orig.replace('take-a-break.jpg', 'happy-employee.jpg');
-                    break;
-                  default:
-                    img.src = orig.replace('happy-employee.jpg', 'take-a-break.jpg');
-                    break;
-                }
-            }, 3000);
-          </script> -->
         </section>
         <!-- slides=03 -->
         <section class="fullscreen bg-gradient-white">
@@ -261,7 +241,7 @@
         <!-- slides=04 -->
         <section class="bg-gradient-white">
           <div class="wrap">
-            <h2>Features</h2>
+            <h2 id="features_jump">Features</h2>
             <ul class="flexblock gallery">
               <li>
                 <figure>
@@ -596,7 +576,7 @@
         <!-- slides=06 -->
         <section class="bg-white" id="plans">
           <div class="wrap">
-            <h2 class="aligncenter text-apple">Personal plans</h2>
+            <h2 id="plans_jump" class="aligncenter text-apple">Personal plans</h2>
             <ul class="flexblock plans">
               <li>
                 <h2 class="personal">Personal</h2>
