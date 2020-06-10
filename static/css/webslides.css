@@ -1258,6 +1258,36 @@ figure[class*='text-pull-'] {
 .bg-apple {
   font-family: 'San Francisco', helvetica, arial, sans-serif; }
 
+.text-title {
+  font-size: 2.5rem;
+}
+.text-xs {
+  font-size: 1.6rem;
+}
+.text-sm {
+  font-size: 2.1rem;
+}
+.text-md {
+  font-size: 2.8rem;
+}
+.text-lg {
+  font-size: 3.2rem;
+}
+
+.text-xlg {
+  font-size: 4rem;
+}
+
+.text-os {
+  padding: 2rem 0;
+}
+.text-green {
+  color: #008850;
+}
+.text-right {
+  text-align: right;
+}
+
 /* Ultra Light */
 @font-face {
   font-family: 'San Francisco';
@@ -1826,7 +1856,7 @@ footer .column h3 {
 .flexblock.features li span,
 .flexblock.features li svg {
   display: block;
-  font-size: 6.4rem;
+  font-size: 5rem;
   line-height: 1;
   margin: 0; }
 
@@ -3501,6 +3531,10 @@ Features & Clients List
 [class*='bg-'] .features li,
 [class*='bg-'] .clients li {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+[class*='bg-'] .features-dark li {
+  background-color: rgba(0,0,0, 0.3);
 }
 
 /* .features li:hover,
