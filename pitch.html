@@ -300,6 +300,7 @@
       var slide = true;
       var nextSlideTimer;
       var slidesShown = {}
+      var changeSlidesDurationMs = 8000;
 
       document.body.addEventListener('ws:init', function (e) {
         // Go to next slide (since slide-change is not fired)
@@ -309,7 +310,7 @@
         if (slide) {
           nextSlideTimer = setTimeout(function(){
             window.ws.goNext()
-          }, 6500);
+          }, changeSlidesDurationMs);
         }
 
 
@@ -422,7 +423,7 @@
         if (slide) {
           nextSlideTimer = setTimeout(function(){
             window.ws.goNext()
-          }, 6500);
+          }, changeSlidesDurationMs);
         }
 
         if (Object.keys(slidesShown).length >= noOfSlides - 1) {
@@ -431,7 +432,7 @@
             var to = setTimeout(function(){
               parent.closePitch();
               clearTimeout(to)
-            }, 6500);
+            }, 5000);
           }
         }
       });
