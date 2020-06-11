@@ -647,7 +647,7 @@
           </div>
         </section>
         <!-- slides=07 -->
-        <section class="bg-gradient-v fullscreen">
+        <section id="contact" class="bg-gradient-v fullscreen">
           <div class="card-50">
             <figure>
               <img src="./static/images/happy-work-team.jpg" alt="">
@@ -657,15 +657,19 @@
                 <h2>Your team will thank you!</h2>
                 <hr>
                 <div class="wrap size-75">
-                  <form action="/" method="post">
+                  <form action="https://mailthis.to/theCucumber.app" method="post">
+                    <input type="hidden" name="_subject" value="Contact form submitted">
+                    <input type="hidden" name="_after" value="https://www.thecucumber.app/#contact">
+                    <input type="hidden" name="_honeypot" value="">
+                    <input type="hidden" name="_confirmation" value="Thank you for your question. We will get back to you within 48 hours.">
                     <fieldset>
                       <legend>Contact Us</legend>
                       <p><label>Name</label>
-                        <input type="text" tabindex="1" name="email" placeholder="" required>
+                        <input type="text" tabindex="1" name="name" placeholder="" required>
                         <label>Email</label>
-                        <input type="email" tabindex="2" name="email" placeholder="" required>
+                        <input type="email" tabindex="2" name="_replyto" placeholder="" required>
                         <label>Question</label>
-                        <textarea name="question" tabindex="3" cols="40" rows="1" required></textarea>
+                        <textarea name="message" tabindex="3" cols="40" rows="1" required></textarea>
                         <button type="submit" class="button contact-us" tabindex="4" title="Login">Submit</button>
                       </p>
                     </fieldset>
