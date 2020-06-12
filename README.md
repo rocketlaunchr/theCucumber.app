@@ -45,7 +45,7 @@ All break schedules are extensively customizable so they can be set to operate d
 | **OFFLINE ENABLED**<br/>Eye strain can strike when you're not online. You could be working in an airplane or remotely in the middle of the Australian Outback. The scheduled breaks will continue to protect you.   | **PRESENTATION PAUSES**<br/>Sometimes you're in a video conference. Other times you've got an important presentation. You can pause the app up to the daily limit so it doesn't interfere with immediate priorities.     |
 | <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/leader.png" alt="leadership" />        |     <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/cron.png" alt="cron dialog" />      |
 | **URGENT TASKS**<br/>The Screen Block is there to help you. On the rare occasion when you have an urgent task, you can skip the scheduled break — but only up to a daily limit.   | **SOPHISTICATED SCHEDULING**<br/>Managers can create fine-grained break schedules such as only during office hours. More advanced users can use CRON syntax to create breaks such as on a particular day of the week or range of months.     |
-| :---        |
+| <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/unity.png" alt="screen shot of custom design" />       |
 | **TEAM UNITY**<br/>Enterprise customers can set their team or company logo as the design.   |
 
 
