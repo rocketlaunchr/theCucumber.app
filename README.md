@@ -51,5 +51,6 @@ All break schedules are extensively customizable so they can be set to operate d
 
 
 <p align="center">
-Built with :heart: by rocketlaunchr.cloud
+Built with :heart: by [rocketlaunchr.cloud](https://abr.business.gov.au/ABN/View?abn=13149461861)<br/>
+© 2020 ABN 13 149 461 861
 </p>
