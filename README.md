@@ -1,8 +1,12 @@
 <p align="center">
-<img height="50%" width="50%" src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/screenshot.png" alt="screenshot of app" />
+<img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/logo.png" alt="logo" />
 </p>
 
 > Digital eye strain impacts 71% of employees. It's overlooked in the modern workplace. It costs productivity and employee happiness. **[Download here](https://github.com/rocketlaunchr/theCucumber.app/releases)**
+
+<p align="center">
+<img height="25%" width="25%" src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/screenshot.png" alt="screenshot of app" />
+</p>
 
 ⭐ **the project to show your appreciation.**
 
