@@ -6,9 +6,10 @@
 
 <p align="center">
 <img height="25%" width="25%" src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/screenshot.png" alt="screenshot of app" />
+⭐ <strong>the project to show your appreciation.</strong>
 </p>
 
-⭐ **the project to show your appreciation.**
+
 
 # The Problem
 ## (It's actually an epidemic!)
