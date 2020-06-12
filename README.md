@@ -37,3 +37,13 @@ To counter the effects of a sedentary lifestyle, short breaks for stretching and
 All break schedules are extensively customizable so they can be set to operate during only office hours.
 
 # Features
+
+| Center-aligned | Center-aligned |
+| :---        |     :---      |
+| **ROBUST SCREEN BLOCKING**<br/>When you're working hard, it's tough to take a break. Robust screen blocking covers your workspace to force you to take your scheduled breaks until it becomes habitual. The productivity gains will come in the long-run.   | **BLINK ALARM**<br/>Your blink rate reduces by 68–80% when you're in front of a screen. The increased dryness contributes to digital eye strain. You can set an alarm to remind you to blink at your natural frequency.     |
+| :---        |     :---      |
+| **OFFLINE ENABLED**<br/>Eye strain can strike when you're not online. You could be working in an airplane or remotely in the middle of the Australian Outback. The scheduled breaks will continue to protect you.   | **PRESENTATION PAUSES**<br/>Sometimes you're in a video conference. Other times you've got an important presentation. You can pause the app up to the daily limit so it doesn't interfere with immediate priorities.     |
+| :---        |     :---      |
+| **URGENT TASKS**<br/>The Screen Block is there to help you. On the rare occasion when you have an urgent task, you can skip the scheduled break — but only up to a daily limit.   | **SOPHISTICATED SCHEDULING**<br/>Managers can create fine-grained break schedules such as only during office hours. More advanced users can use CRON syntax to create breaks such as on a particular day of the week or range of months.     |
+| :---        |
+| **TEAM UNITY**<br/>Enterprise customers can set their team or company logo as the design.   |
