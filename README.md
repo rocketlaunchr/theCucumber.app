@@ -38,7 +38,7 @@ All break schedules are extensively customizable so they can be set to operate d
 
 # Features
 
-| Center-aligned | <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/blink.png" alt="man with eyes closed" /> |
+| <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/usage.png" alt="robust screen blocking" /> | <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/blink.png" alt="man with eyes closed" /> |
 | :---        |     :---      |
 | **ROBUST SCREEN BLOCKING**<br/>When you're working hard, it's tough to take a break. Robust screen blocking covers your workspace to force you to take your scheduled breaks until it becomes habitual. The productivity gains will come in the long-run.   | **BLINK ALARM**<br/>Your blink rate reduces by 68–80% when you're in front of a screen. The increased dryness contributes to digital eye strain. You can set an alarm to remind you to blink at your natural frequency.     |
 | <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/outback.png" alt="remote working" />         |     <img src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/presentation.png" alt="group presentation" />        |
