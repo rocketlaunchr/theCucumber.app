@@ -162,9 +162,9 @@
                 <hr>
                 <p>
                   <a class="button zoomIn radius text-apple"
-                      href="https://thecucumber.app/cucumber-app-latest.zip"
+                      href="https://github.com/rocketlaunchr/theCucumber.app/releases"
                       title="Download theCucumber.app for free"
-                      id="btnDownload-1">
+                      id="btnDownload-1" target="_blank">
                     Download now
                   </a>
                 </p>
@@ -748,6 +748,13 @@
       function isMac() {return navigator.platform.indexOf('Mac') > -1}
       function isWin() {return navigator.platform.indexOf('Win') > -1}
 
+      // Update "Download now" button's link
+      if (isMac()) {
+        document.getElementById('btnDownload-1').href="https://github.com/rocketlaunchr/theCucumber.app/releases/download/v1.0.0/theCucumber.app-macos.pkg";
+      } else if (isWin()) {
+        document.getElementById('btnDownload-1').href="https://github.com/rocketlaunchr/theCucumber.app/releases/download/v1.0.0/theCucumber.app-win.msi";
+      }
+      
       /* scroll to section */
       function scrollToSection(id) {
         var section
