@@ -47,3 +47,9 @@ All break schedules are extensively customizable so they can be set to operate d
 | **URGENT TASKS**<br/>The Screen Block is there to help you. On the rare occasion when you have an urgent task, you can skip the scheduled break — but only up to a daily limit.   | **SOPHISTICATED SCHEDULING**<br/>Managers can create fine-grained break schedules such as only during office hours. More advanced users can use CRON syntax to create breaks such as on a particular day of the week or range of months.     |
 | :---        |
 | **TEAM UNITY**<br/>Enterprise customers can set their team or company logo as the design.   |
+
+
+
+<p align="center">
+Built with :heart: by rocketlaunchr.cloud
+</p>
