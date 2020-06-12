@@ -5,7 +5,7 @@
 > Digital eye strain impacts 71% of employees. It's overlooked in the modern workplace. It costs productivity and employee happiness. **[Download here](https://github.com/rocketlaunchr/theCucumber.app/releases)**
 
 <p align="center">
-<img height="25%" width="25%" src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/screenshot.png" alt="screenshot of app" /><br/>
+<img height="30%" width="30%" src="https://github.com/rocketlaunchr/theCucumber.app/raw/master/readme/screenshot.png" alt="screenshot of app" /><br/>
 ⭐ <strong>the project to show your appreciation.</strong>
 </p>
 
