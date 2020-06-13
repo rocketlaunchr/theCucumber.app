@@ -101,12 +101,12 @@
         </p>
         <ul class="text-apple">
           <li>
-            <a class="btn-login" href="https://thecucumber.app/login" title="Login">
+            <a class="btn-login" href="https://dashboard.thecucumber.app/login" title="Login">
               <strong> Login</strong>
             </a>
           </li>
           <li>
-            <a class="btn-register" href="https://thecucumber.app/register" title="Register">
+            <a class="btn-register" href="https://dashboard.thecucumber.app/register" title="Register">
               <strong>Register</strong>
             </a>
           </li>
@@ -348,7 +348,7 @@
           <div class="wrap">
             <h2 id="research" class="aligncenter text-apple">Read the Research</h2>
 
-            <h3 class="accordion text-subtitle"><strong>Impact of dry eye on work productivity</strong> (2012) by Yamada, M, Et al.</h3>
+            <h3 id="yamada" class="accordion text-subtitle"><strong>Impact of dry eye on work productivity</strong> (2012) by Yamada, M, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -407,7 +407,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Impact+of+dry+eye+on+work+productivity+Yamada+2012+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle"><strong>Effectiveness of a participatory eye care program in reducing eye strain</strong> (2017) by Sudaw Lertwisuttipaiboon, Et al.</h3>
+            <h3 id="sudaw" class="accordion text-subtitle"><strong>Effectiveness of a participatory eye care program in reducing eye strain</strong> (2017) by Sudaw Lertwisuttipaiboon, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -459,7 +459,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Effectiveness+of+a+participatory+eye+care+program+in+reducing+eye+strain+among+staff+computer+users+in+Thailand+2017+Sudaw+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle"><strong>Impact of Dry Eye Disease on Work Productivity, and Patients’ Satisfaction with Over-the-Counter Dry Eye Treatments</strong> (2016) by Nichols, K, Et al.</h3>
+            <h3 id="nichols" class="accordion text-subtitle"><strong>Impact of Dry Eye Disease on Work Productivity, and Patients’ Satisfaction with Over-the-Counter Dry Eye Treatments</strong> (2016) by Nichols, K, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -516,7 +516,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Impact+of+Dry+Eye+Disease+on+Work+Productivity%2C+and+Patients%E2%80%99+Satisfaction+with+Over-the-Counter+Dry+Eye+Treatments+2016+Nichols+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle"><strong>Digital eye strain: prevalence, measurement and amelioration</strong> (2018) by Sheppard, A, Et al.</h3>
+            <h3 id="sheppard" class="accordion text-subtitle"><strong>Digital eye strain: prevalence, measurement and amelioration</strong> (2018) by Sheppard, A, Et al.</h3>
             <div class="panel">
               <h4>
                 <strong class="text-uppercase">Key take-aways</strong>
@@ -553,7 +553,7 @@
               <p class="alignright"><a class="button ghost" href="https://www.google.com/search?q=Digital+eye+strain%3A+prevalence%2C+measurement+and+amelioration+%282018%29+Sheppard+pdf" target="_blank">Full paper link</a></p>
             </div>
 
-            <h3 class="accordion text-subtitle"><strong>Ocular Ergonomics for the Computer Vision Syndrome</strong> (2018) by Turgut, B</h3>
+            <h3 id="turgut" class="accordion text-subtitle"><strong>Ocular Ergonomics for the Computer Vision Syndrome</strong> (2018) by Turgut, B</h3>
             <div class="panel">
               <h4 class="text-subtitle">
                 <strong>Introduction</strong>
@@ -715,6 +715,14 @@
             // Show scrollbars
             document.body.style.overflow = ''
             styl.display = 'none'
+        }
+
+        function register() {
+            window.location.href = 'https://dashboard.thecucumber.app/register';
+        }
+
+        function login() {
+            window.location.href = 'https://dashboard.thecucumber.app/login';
         }
 
         function togglePitch() {
