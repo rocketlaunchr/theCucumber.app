@@ -69,7 +69,7 @@ See [Plans](https://www.thecucumber.app/#plans)
 
 # Contact Us
 
-**hello [at] thecucumber.app**
+:email: **hello [at] thecucumber.app**
 
 <p align="center">
 Built with:heart: by <a target="_blank" href="https://abr.business.gov.au/ABN/View?abn=13149461861">rocketlaunchr.cloud</a><br/>
