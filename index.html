@@ -744,10 +744,7 @@
 
         window.onload = function() {
             var previous = document.referrer;
-            var hostname = previous.hostname;
-            console.dir(previous);
-            console.dir(hostname);
-            if (hostname === 'dashboard.thecucumber.app') {
+            if (previous.indexOf('dashboard.thecucumber.app') > -1) {
               return;
             }
             previous = previous.slice(previous.length - 11)
