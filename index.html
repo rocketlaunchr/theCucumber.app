@@ -742,8 +742,14 @@
             }
         }
 
-        window.onload = function() { 
+        window.onload = function() {
             var previous = document.referrer;
+            var hostname = previous.hostname;
+            console.log(previous);
+            console.log(hostname);
+            if (hostname === 'dashboard.thecucumber.app') {
+              return;
+            }
             previous = previous.slice(previous.length - 11)
             if (previous !== '/pitch.html') {
                 if ((window.location.protocol !== "file:") && (!window.location.hash)) {
