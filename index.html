@@ -744,6 +744,8 @@
 
         window.onload = function() {
             var previous = document.referrer;
+            console.log(previous);
+            console.log(previous.indexOf('dashboard.thecucumber.app'));
             if (previous.indexOf('dashboard.thecucumber.app') > -1) {
               return;
             }
