@@ -745,8 +745,8 @@
         window.onload = function() {
             var previous = document.referrer;
             var hostname = previous.hostname;
-            console.log(previous);
-            console.log(hostname);
+            console.dir(previous);
+            console.dir(hostname);
             if (hostname === 'dashboard.thecucumber.app') {
               return;
             }
